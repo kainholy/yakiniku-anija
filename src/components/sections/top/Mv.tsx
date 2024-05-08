@@ -1,6 +1,5 @@
 import React from 'react'
 import Image from 'next/image'
-import styles from '@/styles/sections/top/Mv.module.scss'
 import SwiperCore, { Autoplay, Navigation, Pagination, EffectFade } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -21,10 +20,7 @@ const images = [
 
 function Mv() {
   return (
-    <section className={styles.container} id='mv'>
-
-      <div className={styles.bg}>
-      </div>
+    <section className='p-top-mv' id='mv'>
 
       <Swiper
         modules={[Navigation, Pagination, Autoplay, EffectFade]}
@@ -43,22 +39,29 @@ function Mv() {
           el: '.swiper-pagination',
           clickable: false,
         }} // ページネーション, クリックで対象のスライドに切り替わる
-        className={styles.slideWrapper}
+        className='p-top-mv__slideWrapper'
       >
         {images.map((src: string, index: number) => (
-          <SwiperSlide className={styles.swiperSlide} key={index}>
+          <SwiperSlide className='p-top-mv__swiperSlide' key={index}>
             <Image
               src={src}
               width={1920}
               height={1038}
               alt="Slider Image"
-              className={styles.slideImage + ' slider-img'}
+              className='p-top-mv__slideImage slider-img'
             />
           </SwiperSlide>
         ))}
       </Swiper>
 
-      <div className={styles.titleArea} ref={titleRef}>
+      <div className='p-top-mv__titleArea'>
+        <Image
+            src={"/top/mv/logo.png"}
+            width={1920}
+            height={1038}
+            alt="兄者"
+            className={'p-top-mv__logo'}
+        />
       </div>
     </section>
   )

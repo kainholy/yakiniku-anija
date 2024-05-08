@@ -1,10 +1,28 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
+import Footer from "@/components/sections/common/Footer";
+import Header from "@/components/sections/common/Header";
+import Concept from "@/components/sections/top/Concept";
+import Menu from "@/components/sections/top/Menu";
+import Message from "@/components/sections/top/Message";
+import Mv from "@/components/sections/top/Mv";
+import News from "@/components/sections/top/News";
+import Recruit from "@/components/sections/top/Recruit";
+import StrongPoint from "@/components/sections/top/StrongPoint";
 
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <main></main>
+    <>
+      <Header />
+      <main>
+        <Mv />
+        <News />
+        <Message />
+        <Concept />
+        <Menu />
+        <StrongPoint />
+        <Recruit />
+      </main>
+      <Footer />
+    </>
   );
 }

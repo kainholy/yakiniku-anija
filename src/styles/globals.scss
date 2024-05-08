@@ -1,5 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import 'mixin.scss';
+@import 'color.scss';
+@import 'font.scss';
 
-
+html {
+    font-size: 62.5%;
+}
+body {
+    background: url('/bg.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-y;
+}
+@import '../styles/sections/top/Mv.scss';
+@import '../styles/sections/top/News.scss';
+@import '../styles/sections/top/Message.scss';
+@import '../styles/sections/top/Concept.scss';
+@import '../styles/sections/top/Menu.scss';
+@import '../styles/sections/top/StrongPoint.scss';
+@import '../styles/sections/top/Recruit.scss';
+@import '../styles/sections/common/Header.scss';
+@import '../styles/sections/common/Footer.scss';

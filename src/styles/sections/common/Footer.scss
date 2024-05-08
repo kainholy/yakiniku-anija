@@ -1,0 +1,70 @@
+@import '../../color.scss';
+.p-footer {
+    background: $bk;
+    padding-top: calc(51.4rem / 2);
+    &__map-area {
+        margin-bottom: calc(-51.4rem / 2);
+        margin-right: auto;
+        margin-left: auto;
+        width: calc(100% - min(5.5vw, 8rem) - min(5.5vw, 8rem));
+
+    }
+    &__iframe {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1280 / 514;
+    }
+    &__container {
+        width: 100%;
+        padding-top: calc(51.4rem / 2 + 8rem);
+        background: url('/common/footer/bg.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding-left: min(5.5vw, 8rem);
+        padding-right: min(5.5vw, 8rem);
+    }
+    &__main-content {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom:  8rem;
+    }
+    &__logo-area {
+        width: 21.4rem;
+        height: 9.586rem;
+    }
+    &__detail {
+        margin-top: 6.4rem;
+        &__title,
+        &__text {
+            padding: .6rem 0;
+        }
+        &__title {
+            padding-right: 4rem;
+        }
+    }
+    &__right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    &__sub-logo-area {
+        width: 10.9rem;
+        height: 10.6rem;
+    }
+    &__parent-company {
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        gap: .8rem;
+    }
+    &__sub-content-area {
+        border-top: 0.1rem solid $wh;
+        padding: 4rem 0;
+    }
+    &__list {
+        display: flex;
+        gap: 2.4rem;
+    }
+}

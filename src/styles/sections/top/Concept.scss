@@ -1,0 +1,32 @@
+.p-top-concept {
+    padding-top: 8rem;
+    padding-left: min(5.5vw, 8rem);
+    padding-right: min(5.5vw, 8rem);
+    max-width: 144rem;
+    margin: 0 auto;
+    &__container {
+        position: relative;
+        width: 100%;
+        border: .2rem solid #000;
+        display: flex;
+        padding: 8rem calc(70 / 1280 * 100%);
+    }
+    &__title {
+        margin-top: 2.4rem;
+        height: 10.792rem;
+    }
+    &__text-area {
+        padding-top: 3.2rem;
+    }
+    &__button-area {
+        padding-top: 4rem;
+    }
+    &__img-area {
+        position: absolute;
+        top: 50%;
+        right: -5rem;
+        transform: translateY(-50%);
+        width: 72.3rem;
+        height: 72.3rem;
+    }
+}

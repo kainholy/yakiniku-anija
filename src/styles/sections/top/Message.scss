@@ -1,0 +1,28 @@
+.p-top-message {
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        padding-top: 27rem;
+        padding-bottom: 27rem;
+    }
+    &__content-area {
+    }
+    &__title-area {
+        text-align: center;
+    }
+    &__text-area {
+        margin-top: 4rem;
+    }
+    &__text {
+        text-align: center;
+    }
+    &__button-area {
+        margin-top: 2.4rem;
+    }
+    &__button {
+        margin: 0 auto;
+    }
+}

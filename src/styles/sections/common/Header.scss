@@ -1,0 +1,41 @@
+@import '../../color.scss';
+.p-header {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    top: 2.4rem;
+    left: 0;
+    &__container {
+        padding-left: min(5.5vw, 8rem);
+        padding-right: min(5.5vw, 8rem);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__main {
+        display: flex;
+        // align-items: flex-end;
+        // gap: 3.2rem;
+        flex-direction: column;
+    }
+    &__logo-area {
+        width: 14rem;
+        height: 6.517rem;
+    }
+    &__detail {
+        padding-left: min(5.5vw, 8rem);
+        padding-top: .8rem;
+        &__list {
+            display: flex;
+            gap: 1.6rem;
+        }
+        &__item + &__item {
+            padding-left: 1.6rem;
+            border-left: .1rem solid $bk;
+        }
+    }
+    &__list {
+        display: flex;
+        gap: 3.2rem;
+    }
+}

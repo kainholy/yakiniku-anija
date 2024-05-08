@@ -1,0 +1,77 @@
+@import '../../color.scss';
+.p-top-strong-point {
+    &__container {
+        padding-top: 12rem;
+    }
+    &__title-area {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__title {
+        height: 4.2rem;
+    }
+    &__content-area {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+        display: flex;
+        flex-direction: column;
+        gap: 8rem;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 11rem;
+        position: relative;
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        &__bg {
+            position: absolute;
+            top: 50%;
+            width: 60%;
+            height: 100%;
+            transform: translateY(-50%);
+            background: $bk;
+            z-index: 1;
+        }
+        &__text-area {
+            width: 39.6rem;
+            position: relative;
+            z-index: 2;
+        }
+        &__number {
+            position: absolute;
+            top: -40%;
+            left: -10%;
+        }
+        &__title {
+            
+        }
+        &__text {
+            margin-top: 2.4rem;
+        }
+        &__img-area {
+            width: 70rem;
+            z-index: 2;
+        }
+        &.--first,
+        &.--third {
+            justify-content: flex-start;
+            padding-left: min(5.5vw, 8rem);
+            .p-top-strong-point__item__bg {
+                left: 0;
+            }
+        }
+        &.--second {
+            justify-content: flex-end;
+            padding-right: min(5.5vw, 8rem);
+            .p-top-strong-point__item__bg {
+                right: 0;
+            }
+            .p-top-strong-point__item__img-area {
+                order: -1;
+            }
+        }
+    }
+}
