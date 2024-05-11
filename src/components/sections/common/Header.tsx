@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 const base = 'p-header'
 
 function Header() {
+
   return (
     <header id='header' className={base}>
         <div className={base+'__container'}>

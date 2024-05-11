@@ -7,6 +7,24 @@ function Message() {
   return (
     <section id='message' className={base}>
         <div className={base+'__container'}>
+            <div className={base+'__left-img-area'}>
+                <Image
+                    className={base+'__left-img c-img'}
+                    src="/top/message/1.png"
+                    alt=""
+                    width={400}
+                    height={400}
+                />
+            </div>
+            <div className={base+'__right-img-area'}>
+                <Image
+                    className={base+'__right-img c-img'}
+                    src="/top/message/2.png"
+                    alt=""
+                    width={400}
+                    height={400}
+                />
+            </div>
             <div className={base+'__content-area'}>
                 <div className={base+'__title-area'}>
                     <Image

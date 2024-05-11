@@ -3,7 +3,9 @@
     position: fixed;
     z-index: 100;
     width: 100%;
-    top: 2.4rem;
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+    top: 0rem;
     left: 0;
     &__container {
         padding-left: min(5.5vw, 8rem);
