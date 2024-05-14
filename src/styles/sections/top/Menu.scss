@@ -28,8 +28,14 @@
             height: auto;
             aspect-ratio: 400 / 266;
         }
+        &__img {
+            width: auto;
+            height: 100%;
+            object-fit: cover;
+        }
         &__name {
             margin-top: 1.8rem;
+            white-space: pre-wrap;
         }
         &__price {
             margin-top: 1.2rem;

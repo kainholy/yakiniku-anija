@@ -5,24 +5,34 @@ const base = 'p-top-menu'
 
 const menuList = [
     {
-        name: 'タン',
+        name: '神戸牛漢の特選カルビ',
         img: '/top/menu/1.png',
-        price: '1000',
+        price: '2970',
     },
     {
-        name: 'カルビ',
+        name: '男の特選ハラミ',
         img: '/top/menu/2.png',
-        price: '1000',
+        price: '2970',
     },
     {
-        name: 'ハラミ',
+        name: '至極の肉厚赤身',
         img: '/top/menu/3.png',
-        price: '1000',
+        price: '2640',
     },
     {
-        name: 'ホルモン',
+        name: 'タン3種盛り',
         img: '/top/menu/4.png',
-        price: '1000',
+        price: '5500',
+    },
+    {
+        name: 'ホルモン3種盛り\n（ホルモン、ミノ、レバー）',
+        img: '/top/menu/5.png',
+        price: '1430',
+    },
+    {
+        name: '牛レバー',
+        img: '/top/menu/6.png',
+        price: '990',
     },
 ]
 
@@ -57,7 +67,7 @@ function Menu() {
                             <div className={base+'__item__container'}>
                                 <div className={base+'__item__img-area'}>
                                     <Image
-                                        className={base+'__item__img c-img'}
+                                        className={base+'__item__img'}
                                         src={menu.img}
                                         alt=""
                                         width={600}
