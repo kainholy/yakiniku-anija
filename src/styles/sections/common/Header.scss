@@ -5,39 +5,80 @@
     width: 100%;
     padding-top: 2.4rem;
     padding-bottom: 2.4rem;
-    top: 0rem;
+    top: 0;
     left: 0;
+    @include sp {
+        padding-top: 1.6rem;
+        padding-bottom: 1.6rem;
+    }
     &__container {
         padding-left: min(5.5vw, 8rem);
         padding-right: min(5.5vw, 8rem);
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @include sp {
+            padding-left: min(calc(20 / 375 * 100vw), 2rem);
+            padding-right: min(calc(20 / 375 * 100vw), 2rem);
+        }
     }
     &__main {
         display: flex;
-        // align-items: flex-end;
-        // gap: 3.2rem;
         flex-direction: column;
     }
     &__logo-area {
         width: 14rem;
-        height: 6.517rem;
+        aspect-ratio: 140 / 65.17;
+        @include sp {
+            width: 10rem;
+        }
     }
     &__detail {
         padding-left: min(5.5vw, 8rem);
         padding-top: .8rem;
+        @include sp {
+            padding-left: min(calc(20 / 375 * 100vw), 2rem);
+        }
         &__list {
             display: flex;
             gap: 1.6rem;
+            @include sp {
+                gap: .8rem;
+            }
         }
         &__item + &__item {
             padding-left: 1.6rem;
             border-left: .1rem solid $bk;
+            @include sp {
+                padding-left: .8rem;
+            }
+        }
+        &__item {
+            display: inline-flex;
+            align-items: center;
+            gap: .8rem;
+            @include sp {
+                gap: .4rem;
+            }
+        }
+        &__map {
+            width: 1.283rem;
+            @include sp {
+                width: 1rem;
+            }
+        }
+        &__instagram {
+            width: 1.46rem;
+            @include sp {
+                width: 1.2rem;
+            }
         }
     }
     &__list {
         display: flex;
         gap: 3.2rem;
+        @include sp {
+            gap: 1.2rem;
+        }
     }
 }

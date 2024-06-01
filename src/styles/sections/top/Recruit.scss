@@ -4,12 +4,19 @@
 
     &__container {
         padding-top: 12rem;
+        padding-bottom: 19rem;
         padding-left: min(5.5vw, 8rem);
         padding-right: min(5.5vw, 8rem);
         max-width: 144rem;
         margin: 0 auto;
         position: relative;
-        padding-bottom: 19rem;
+        @include sp {
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+            padding-left: min(calc(20 / 375 * 100vw), 2rem);
+            padding-right: min(calc(20 / 375 * 100vw), 2rem);
+            overflow: hidden;
+        }
     }
 
     &__img-area {
@@ -19,30 +26,53 @@
             width: 20.4rem;
             aspect-ratio: 204 / 136;
             right: min(calc(212 / 1440 * 100vw), 21.2rem);
+            @include sp {
+                width: 20.4 * .5rem;
+                right: min(calc(20 / 375 * 100vw), 2rem);
+            }
         }
         &.--second {
             width: 40rem;
             aspect-ratio: 204 / 136;
             top: 20.5rem;
             left: min(5.5vw, 8rem);
+            @include sp {
+                width: 40 * .35rem;
+                top: 6.5rem;
+                left: 0;
+            }
         }
         &.--third {
             width: 22.5rem;
             aspect-ratio: 255 / 331.82;
             top: 45%;
             right: min(5.5vw, 8rem);
+            @include sp {
+                width: 22.5 * .4rem;
+                right: 0;
+                top: 65%;
+            }
         }
         &.--fourth {
             width: 22rem;
             aspect-ratio: 204 / 136;
             top: 60%;
             left: min(calc(110 / 1440 * 100vw), 11rem);
+            @include sp {
+                width: 22 * .5rem;
+                top: 80%;
+                left: min(calc(40 / 375 * 100vw), 4rem);
+            }
         }
         &.--fifth {
             width: 24.6rem;
             aspect-ratio: 255 / 331.82;
             bottom: 10%;
             right: min(calc(374 / 1440 * 100vw), 37.4rem);
+            @include sp {
+                width: 24.6 * .5rem;
+                display: none;
+            }
         }
 
     }
@@ -55,6 +85,9 @@
         justify-content: center;
         position: relative;
         z-index: 3;
+        @include sp {
+            height: 60.4rem;
+        }
     }
     &__circle {
         position: absolute;
@@ -62,6 +95,12 @@
         aspect-ratio: 1 / 1;
         border: 0.1rem solid #7A7172;
         border-radius: 50%;
+        @include sp {
+            width: calc(110%);
+            top: 42%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
     }
 
     &__title-area {
@@ -69,15 +108,24 @@
     }
     &__title-en {
         margin-bottom: 3.2rem;
+        @include sp {
+            margin-bottom: 1.6rem;
+        }
     }
     &__text-area {
         margin-top: 4rem;
+        @include sp {
+            margin-top: 3.2rem;
+        }
     }
     &__text {
         text-align: center;
     }
     &__button-area {
         margin-top: 4rem;
+        @include sp {
+            margin-top: 3.2rem;
+        }
     }
     &__button {
         margin: 0 auto;

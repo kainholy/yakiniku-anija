@@ -2,6 +2,9 @@
 .p-top-strong-point {
     &__container {
         padding-top: 12rem;
+        @include sp {
+            padding-top: 6rem;
+        }
     }
     &__title-area {
         display: flex;
@@ -11,6 +14,9 @@
     }
     &__title {
         height: 4.2rem;
+        @include sp {
+            height: 2.8rem;
+        }
     }
     &__content-area {
         padding-top: 8rem;
@@ -18,6 +24,11 @@
         display: flex;
         flex-direction: column;
         gap: 8rem;
+        @include sp {
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+            gap: 8rem;
+        }
     }
     &__item {
         display: flex;
@@ -26,6 +37,12 @@
         position: relative;
         padding-top: 6rem;
         padding-bottom: 6rem;
+        @include sp {
+            padding-top: 0rem;
+            padding-bottom: 4rem;
+            flex-direction: column;
+            gap: 4rem;
+        }
         &__bg {
             position: absolute;
             top: 50%;
@@ -34,43 +51,74 @@
             transform: translateY(-50%);
             background: $bk;
             z-index: 1;
+            @include sp {
+                width: 100%;
+                height: 80%;
+                top: 60%;
+            }
         }
         &__text-area {
             width: 39.6rem;
             position: relative;
             z-index: 2;
+            @include sp {
+                width: 100%;
+            }
         }
         &__number {
             position: absolute;
             top: -40%;
             left: -10%;
-        }
-        &__title {
-            
+            @include sp {
+                left: -5%;
+            }
         }
         &__text {
             margin-top: 2.4rem;
+            @include sp {
+                margin-top: 1.6rem;
+            }
         }
         &__img-area {
             width: 70rem;
             z-index: 2;
+            @include sp {
+                width: 100%;
+                order: -1;
+            }
         }
         &.--first,
         &.--third {
             justify-content: flex-start;
             padding-left: min(5.5vw, 8rem);
+            @include sp {
+                padding-left: min(calc(20 / 375 * 100vw), 2rem);
+            }
             .p-top-strong-point__item__bg {
                 left: 0;
+            }
+            .p-top-strong-point__item__text-area {
+                @include sp {
+                    padding-right: min(calc(20 / 375 * 100vw), 2rem);
+                }
             }
         }
         &.--second {
             justify-content: flex-end;
             padding-right: min(5.5vw, 8rem);
+            @include sp {
+                padding-right: min(calc(20 / 375 * 100vw), 2rem);
+            }
             .p-top-strong-point__item__bg {
                 right: 0;
             }
             .p-top-strong-point__item__img-area {
                 order: -1;
+            }
+            .p-top-strong-point__item__text-area {
+                @include sp {
+                    padding-left: min(calc(20 / 375 * 100vw), 2rem);
+                }
             }
         }
     }

@@ -12,10 +12,6 @@ const images = [
   "/top/mv/3.png",
   "/top/mv/4.png",
   "/top/mv/5.png",
-//   "/top/mv/2.webp",
-//   "/top/mv/5.webp",
-//   "/top/mv/6.webp",
-//   "/top/mv/7.webp",
 ];
 
 function Mv() {

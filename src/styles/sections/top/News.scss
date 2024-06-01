@@ -6,6 +6,11 @@
     padding-right: min(5.5vw, 8rem);
     max-width: 144rem;
     margin: 0 auto;
+    @include sp {
+        padding-top: 4rem;
+        padding-left: min(calc(20 / 375 * 100vw), 2rem);
+        padding-right: min(calc(20 / 375 * 100vw), 2rem);
+    }
     &__container {
         width: 100%;
         background: $dark;
@@ -13,14 +18,26 @@
         display: flex;
         justify-content: space-between;
         gap: calc(40 / 1280 * 100%);
+        @include sp {
+            padding: 4rem calc(20 / 335 * 100%);
+            flex-direction: column;
+            justify-content: unset;
+            gap: 2.4rem;
+        }
     }
     &__list {
         border-top: .08rem solid #fff;
         border-bottom: .08rem solid #fff;
         width: calc(880 / 1140 * 100%);
+        @include sp {
+            width: 100%;
+        }
     }
     &__item {
         padding: 3.2rem 0;
+        @include sp {
+            padding: 1.6rem 0;
+        }
     }
     &__item + &__item {
         border-top: .08rem solid #fff;

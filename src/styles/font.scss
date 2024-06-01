@@ -10,6 +10,9 @@ $medium: 500;
     font-family: $noto;
     font-size: 1.6rem;
     font-weight: $medium;
+    @include sp {
+        font-size: 1.3rem;
+    }
 }
 .c-footer-detail-text {
     font-family: $noto;
@@ -21,22 +24,34 @@ $medium: 500;
     font-family: $noto;
     font-size: 1.6rem;
     font-weight: $regular;
+    @include sp {
+        font-size: 1.2rem;
+    }
 
 }
 .c-footer-parent-company-title{
     font-family: $noto;
     font-size: 1.6rem;
     font-weight: $regular;
+    @include sp {
+        font-size: 1.3rem;
+    }
 }
 .c-footer-parent-company-name {
     font-family: $noto;
     font-size: 1.8rem;
     font-weight: $regular;
+    @include sp {
+        font-size: 1.4rem;
+    }
 }
 .c-footer-link {
     font-family: $noto;
     font-size: 1.4rem;
     font-weight: $regular;
+    @include sp {
+        font-size: 1.2rem;
+    }
 }
 
 .c-top-news-date {
@@ -50,6 +65,9 @@ $medium: 500;
     font-size: 1.6rem;
     line-height: 2;
     font-weight: $regular;
+    @include sp {
+        font-size: 1.4rem;
+    }
 }
 .p-top-message-text {
     font-family: $noto;
@@ -57,6 +75,9 @@ $medium: 500;
     line-height: 2;
     letter-spacing: 0.032rem;
     font-weight: $regular;
+    @include sp {
+        font-size: 1.4rem;
+    }
 }
 .p-top-concept-text {
     font-family: $noto;
@@ -64,24 +85,36 @@ $medium: 500;
     line-height: 2;
     letter-spacing: 0.032rem;
     font-weight: $regular;
+    @include sp {
+        font-size: 1.3rem;
+    }
 }
 .c-top-menu-name {
     font-family: $noto;
     font-size: 2rem;
     font-weight: $bold;
     letter-spacing: calc(20 * 0.007rem);
+    @include sp {
+        font-size: 1.6rem;
+    }
 }
 .c-top-menu-price {
     font-family: $noto;
     font-size: 1.8rem;
     font-weight: $medium;
     letter-spacing: calc(14 * 0.007rem);
+    @include sp {
+        font-size: 1.4rem;
+    }
 }
 .c-top-strong-point-text {
     font-family: $noto;
     font-size: 1.6rem;
     line-height: 2;
     font-weight: $regular;
+    @include sp {
+        font-size: 1.4rem;
+    }
 }
 .c-top-strong-point-number {
     font-family: $play;
@@ -89,18 +122,28 @@ $medium: 500;
     font-weight: $bold;
     letter-spacing: 80 * 0.007rem;
     opacity: 0.2;
+    @include sp {
+        font-size: 7rem;
+    }
 }
 .c-top-recruit-text {
     font-family: $noto;
     font-size: 1.6rem;
     line-height: 2;
     font-weight: $regular;
+    @include sp {
+        font-size: 1.3rem;
+    }
 }
 // 
 .c-title-img {
     width: auto;
     height: 3.2rem;
     margin-top: 1.6rem;
+    @include sp {
+        margin-top: 1.2rem;
+        height: 2.4rem;
+    }
     &.--center {
         margin-left: auto;
         margin-right: auto;
@@ -110,6 +153,10 @@ $medium: 500;
     width: auto;
     height: 4.7rem;
     margin-top: 1.6rem;
+    @include sp {
+        margin-top: 1.2rem;
+        height: 3.2rem;
+    }
     &.--center {
         margin-left: auto;
         margin-right: auto;
@@ -127,6 +174,9 @@ $medium: 500;
     font-weight: $bold;
     font-size: 1.6rem;
     margin-top: .8rem;
+    @include sp {
+        font-size: 1.3rem;
+    }
 }
 .c-button {
     background: $bk;
@@ -136,6 +186,10 @@ $medium: 500;
     padding: 1.6rem 6.2rem;
     display: block;
     width: fit-content;
+    @include sp {
+        font-size: 1.4rem;
+        padding: 1.3rem 4.4rem;
+    }
     &.--wh {
         background: $wh;
     }

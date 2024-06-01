@@ -1,10 +1,12 @@
 @import "../../mixin.scss";
 .p-top-mv {
     width: 100%;
-    aspect-ratio: 16 / 9;
     position: relative;
+    @include pc {
+        aspect-ratio: 16 / 9;
+    }
     @include sp {
-        max-height: 100dvh;
+        height: 100dvh;
     }
     &__titleArea {
         position: absolute;
@@ -15,6 +17,9 @@
     }
     &__logo {
         width: 9.594rem;
+        @include sp {
+            width: 7rem;
+        }
     }
 
 
@@ -35,6 +40,7 @@
     &__slideImage {
         width: 100%;
         height: auto;
+        object-fit: cover;
         @include sp {
             position: absolute;
             left: 50%;
@@ -47,18 +53,15 @@
     }
     .swiper {
         .swiper-slide {
-            opacity: 0.5; // 非アクティブなスライドの透明度を下げる
-            transition: opacity 1s; // スライドの切り替わりにフェード効果を適用する
+            opacity: 0.5;
+            transition: opacity 1s;
         }
         .swiper-slide-active {
-            opacity: 1; // アクティブなスライドの透明度を上げる
-            .slider-img {
-                // transition-delay: 0s;
-            }
+            opacity: 1;
         }
         .swiper-slide-prev,
         .swiper-slide-next {
-            opacity: 0.5; // 前のスライドと次のスライドの透明度を下げる
+            opacity: 0.5;
         }
         .slider-img {
             transform-origin: center;

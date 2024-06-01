@@ -37,13 +37,30 @@ function Header() {
         <div className={base+'__detail'}>
             <ul className={base+'__detail__list'}>
                 <li className={base+'__detail__item'}>
-                    <p className={base+'__detail__text c-header-detail-text bk'}>17時~23時 火曜日定休</p>
+                    <p className={base+'__detail__text c-header-detail-text bk'}>12時~15時, 17時~23時 火曜日定休</p>
                 </li>
                 <li className={base+'__detail__item'}>
-                    <span></span>
+                    <span className={base+'__detail__map'}>
+                        <Image
+                            className={base+'__map c-img'}
+                            src="/common/header/map.png"
+                            alt=""
+                            width={200}
+                            height={50}
+                        />
+                    </span>
                     <p className={base+'__detail__text c-header-detail-text bk'}>東京都足立区綾瀬2丁目24-11 ホワイトハウス2F</p>
                 </li>
                 <li className={base+'__detail__item'}>
+                    <span className={base+'__detail__instagram'}>
+                        <Image
+                            className={base+'__instagram c-img'}
+                            src="/common/header/instagram.png"
+                            alt=""
+                            width={200}
+                            height={50}
+                        />
+                    </span>
                     <p className={base+'__detail__text c-header-detail-text bk'}>最新情報はこちらから</p>
                 </li>
             </ul>
