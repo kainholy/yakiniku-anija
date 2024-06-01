@@ -13,15 +13,17 @@ function Header() {
   return (
     <header id='header' className={base}>
         <div className={base+'__container'}>
-            <div className={base+'__logo-area'}>
-                <Image
-                    className={base+'__logo c-img'}
-                    src="/common/header/logo.png"
-                    alt=""
-                    width={200}
-                    height={50}
-                />
-            </div>
+            <Link href="/">
+                <div className={base+'__logo-area'}>
+                    <Image
+                        className={base+'__logo c-img'}
+                        src="/common/header/logo.png"
+                        alt=""
+                        width={200}
+                        height={50}
+                    />
+                </div>
+            </Link>
             <nav className={base+'__nav pc'}>
                 <ul className={base+'__list'}>
                     <li className={base+'__item'}>
