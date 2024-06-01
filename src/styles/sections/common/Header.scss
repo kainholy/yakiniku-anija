@@ -30,8 +30,37 @@
         width: 14rem;
         aspect-ratio: 140 / 65.17;
         @include sp {
+            z-index: 3;
             width: 10rem;
         }
+    }
+    &__btn {
+        width: 5.2rem;
+        height: 4rem;
+        background: $bk;
+        padding: 1rem;
+        display: inline-flex;
+        gap: .8rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 3;
+        &-line {
+            content: "";
+            width: 100%;
+            height: .15rem;
+            background: $wh;
+            display: block;
+            transition: .2s ease-out;
+            transform-origin: center;
+        }
+    }
+    &__btn[aria-expanded="true"] > .line1 {
+        transform: translate(0px, 4.5px) rotateZ(-25deg);
+    }
+    
+    &__btn[aria-expanded="true"] > .line2 {
+        transform: translate(0px, -4.5px) rotateZ(25deg);
     }
     &__detail {
         padding-left: min(5.5vw, 8rem);
@@ -50,7 +79,8 @@
             padding-left: 1.6rem;
             border-left: .1rem solid $bk;
             @include sp {
-                padding-left: .8rem;
+                padding-left: 0;
+                border-left: none;
             }
         }
         &__item {
@@ -81,4 +111,42 @@
             gap: 1.2rem;
         }
     }
+
+    &__ham[aria-hidden="false"] {
+        transform: translateX(0%);
+    }
+    &__ham {
+        width: 100%;
+        height: 100dvh;
+        background-color: $wh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        transform: translateX(-100%);
+        transition: .3s ease-out;
+        &__nav {
+            width: 100%;
+            padding-top: 30dvh;
+            padding-left: min(calc(20 / 375 * 100vw), 2rem);
+            padding-right: min(calc(20 / 375 * 100vw), 2rem);
+        }
+        &__list {
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+            align-items: flex-start;
+        }
+        &__detail {
+            margin-top: 4rem;
+            padding-left: 2rem;
+            border-left: .1rem $bk solid;
+        }
+        &__detail__list {
+            display: flex;
+            flex-direction: column;
+            gap: 2.4rem;
+        }
+    }
+
 }

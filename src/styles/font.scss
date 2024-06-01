@@ -11,6 +11,14 @@ $medium: 500;
     font-size: 1.6rem;
     font-weight: $medium;
     @include sp {
+        font-size: 1.5rem;
+    }
+}
+.c-header-detail-text {
+    font-family: $noto;
+    font-size: 1.3rem;
+    font-weight: $regular;
+    @include sp {
         font-size: 1.3rem;
     }
 }

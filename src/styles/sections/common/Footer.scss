@@ -18,6 +18,7 @@ $footer-margin: 51.4rem;
         aspect-ratio: 1280 / 514;
         @include sp {
             aspect-ratio: 375 / 500;
+            max-height: 50rem;
         }
     }
     &__container {
