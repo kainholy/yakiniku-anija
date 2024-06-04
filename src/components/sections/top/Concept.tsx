@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 const base = 'p-top-concept'
 
-function Concept() {
+function Concept({ page }: { page: string }) {
   return (
     <section id='concept' className={base}>
       <div className={base+'__container'}>
@@ -35,11 +35,13 @@ function Concept() {
                     最高の焼肉体験をご堪能ください。
                 </p>
             </div>
-            <div className={base+'__button-area'}>
-                <Link href='/' className={base+'__button c-button wh'}>
-                    詳しく見る
-                </Link>
-            </div>
+            {page === 'top' &&
+                <div className={base+'__button-area'}>
+                    <Link href='/' className={base+'__button c-button wh'}>
+                        詳しく見る
+                    </Link>
+                </div>
+            }
         </div>
         <div className={base+'__img-area'}>
             <Image

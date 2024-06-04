@@ -1,6 +1,6 @@
 @import 'color.scss';
-$noto: 'noto-sans-cjk-jp', sans-serif;
-$play: 'playfair-display', serif;
+$noto: YakuHanJP, 'noto-sans-cjk-jp', sans-serif;
+$play: YakuHanJP, 'playfair-display', serif;
 $bold: 700;
 $regular: 400;
 $medium: 500;
@@ -62,6 +62,7 @@ $medium: 500;
     }
 }
 
+// top
 .c-top-news-date {
     font-family: $noto;
     font-size: 1.2rem;
@@ -143,7 +144,6 @@ $medium: 500;
         font-size: 1.3rem;
     }
 }
-// 
 .c-title-img {
     width: auto;
     height: 3.2rem;

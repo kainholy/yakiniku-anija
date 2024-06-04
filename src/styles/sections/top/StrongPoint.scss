@@ -57,6 +57,21 @@
                 top: 60%;
             }
         }
+        &__title0 {
+            height: 8.4rem;
+            aspect-ratio: 310.43 / 84;
+            @include sp {
+                height: 5.6rem;
+            }
+        }
+        &__title1 {
+            height: 8.4rem;
+            aspect-ratio: 376.55 / 84;
+            @include sp {
+                height: 5.6rem;
+            }
+        }
+
         &__text-area {
             width: 39.6rem;
             position: relative;

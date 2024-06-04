@@ -13,7 +13,9 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: repeat-y;
+    font-feature-settings: "palt";
 }
+// top
 @import '../styles/sections/top/Mv.scss';
 @import '../styles/sections/top/News.scss';
 @import '../styles/sections/top/Message.scss';
@@ -21,5 +23,9 @@ body {
 @import '../styles/sections/top/Menu.scss';
 @import '../styles/sections/top/StrongPoint.scss';
 @import '../styles/sections/top/Recruit.scss';
+
+// concept
+@import '../styles/sections/concept/Mv.scss';
+
 @import '../styles/sections/common/Header.scss';
 @import '../styles/sections/common/Footer.scss';

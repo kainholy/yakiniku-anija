@@ -1,14 +1,11 @@
 import Footer from "@/components/sections/common/Footer";
 import Header from "@/components/sections/common/Header";
+import Mv from "@/components/sections/concept/Mv";
 import Concept from "@/components/sections/top/Concept";
-import Menu from "@/components/sections/top/Menu";
 import Message from "@/components/sections/top/Message";
-import Mv from "@/components/sections/top/Mv";
-import News from "@/components/sections/top/News";
-import Recruit from "@/components/sections/top/Recruit";
 import StrongPoint from "@/components/sections/top/StrongPoint";
 
-const page = 'top'
+const page = 'concept'
 
 export default function Home() {
   return (
@@ -16,14 +13,11 @@ export default function Home() {
       <Header />
       <main>
         <Mv />
-        <News />
-        <Message page={page} />
-        <Concept page={page} />
-        <Menu />
+        <Message page={ page } />
+        <Concept page={ page } />
         <StrongPoint />
-        <Recruit />
       </main>
-      <Footer page={page} />
+      <Footer page={ page } />
     </>
   );
 }

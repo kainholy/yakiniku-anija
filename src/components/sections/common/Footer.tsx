@@ -26,9 +26,9 @@ const data = [
   }
 ]
 
-function Footer() {
+function Footer({ page }: { page: string }) {
   return (
-    <footer id='footer' className={base}>
+    <footer id='footer' className={base + ' ' + page}>
       <div className={base+'__map-area'}>
         <iframe className={base+'__iframe'} src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d25990.506069581163!2d139.817644501677!3d35.7612929810335!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188f005f9a6cdb%3A0xbe6dc7e193d051a0!2z54S86IKJ5YWE6ICF!5e0!3m2!1sja!2sjp!4v1715147395130!5m2!1sja!2sjp" width="600" height="450" allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
       </div>
@@ -83,10 +83,13 @@ function Footer() {
               <Link href="/" className={base+'__link c-footer-link wh'}>トップ</Link>
             </li>
             <li className={base+'__item'}>
-              <Link href="/concept" className={base+'__link c-footer-link wh'}>コンセプト</Link>
+              <Link href="/concept" className={base+'__link c-footer-link wh'}>兄者の思い</Link>
             </li>
             <li className={base+'__item'}>
               <Link href="/menu" className={base+'__link c-footer-link wh'}>お品書き</Link>
+            </li>
+            <li className={base+'__item'}>
+                <Link href="/news" className={base+'__link c-header-link wh'}>お知らせ</Link>
             </li>
             <li className={base+'__item'}>
               <Link href="/recruit" className={base+'__link c-footer-link wh'}>採用情報</Link>

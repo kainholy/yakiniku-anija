@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 const base = 'p-top-message'
 
-function Message() {
+function Message({ page }: { page: string}) {
   return (
     <section id='message' className={base}>
         <div className={base+'__container'}>
@@ -47,19 +47,22 @@ function Message() {
                 </div>
                 <div className={base+'__text-area'}>
                     <p className={base+'__text p-top-message-text'}>
-                        共に味わう、繋がる喜び。<br />
-                        焼肉兄者がお届けするのは、ただの食事ではなく、<br />
-                        一皿一皿に込められた情熱と、心からのおもてなしです。<br /><br />
+                        ”足立区の焼肉”として全国に広めていきたい。<br />
+                        私たちはこの精神を、<br />
+                        料理のクオリティと、
+                        生きたサービスでおもてなしします。<br /><br />
 
-                        私たちの精神を生きたサービスで、<br />
+                        兄者独自のサービス空間で<br />
                         お客様一人ひとりに、特別な瞬間を創造します。
                     </p>
                 </div>
-                <div className={base+'__button-area'}>
-                    <Link href='/' className={base+'__button c-button wh'}>
-                        兄者の思い
-                    </Link>
-                </div>
+                {page === 'top' &&
+                    <div className={base+'__button-area'}>
+                        <Link href='/' className={base+'__button c-button wh'}>
+                            兄者の思い
+                        </Link>
+                    </div>
+                }
             </div>
         </div>
     </section>

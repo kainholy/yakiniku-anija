@@ -30,10 +30,13 @@ function Header() {
                         <Link href="/" className={base+'__link c-header-link bk'}>トップ</Link>
                     </li>
                     <li className={base+'__item'}>
-                        <Link href="/concept" className={base+'__link c-header-link bk'}>コンセプト</Link>
+                        <Link href="/concept" className={base+'__link c-header-link bk'}>兄者の思い</Link>
                     </li>
                     <li className={base+'__item'}>
                         <Link href="/menu" className={base+'__link c-header-link bk'}>お品書き</Link>
+                    </li>
+                    <li className={base+'__item'}>
+                        <Link href="/news" className={base+'__link c-header-link bk'}>お知らせ</Link>
                     </li>
                     <li className={base+'__item'}>
                         <Link href="/recruit" className={base+'__link c-header-link bk'}>採用情報</Link>
@@ -83,10 +86,13 @@ function Header() {
                         <Link href="/" className={base+'__ham__link c-header-link bk'}>トップ</Link>
                     </li>
                     <li className={base+'__ham__item'}>
-                        <Link href="/concept" className={base+'__ham__link c-header-link bk'}>コンセプト</Link>
+                        <Link href="/concept" className={base+'__ham__link c-header-link bk'}>兄者の思い</Link>
                     </li>
                     <li className={base+'__ham__item'}>
                         <Link href="/menu" className={base+'__ham__link c-header-link bk'}>お品書き</Link>
+                    </li>
+                    <li className={base+'__item'}>
+                        <Link href="/news" className={base+'__link c-header-link bk'}>お知らせ</Link>
                     </li>
                     <li className={base+'__ham__item'}>
                         <Link href="/recruit" className={base+'__ham__link c-header-link bk'}>採用情報</Link>

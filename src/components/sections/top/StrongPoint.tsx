@@ -6,21 +6,21 @@ const data = [
 	{
 		number: '01',
 		subtitle: '/top/strong-point/subtitle1.png',
-		title: '焼肉兄者だけの特権、他では手に入らない厳選された神戸牛のタン、カルビ、ハラミ。私たちの独自のルートで仕入れた極上の味を、あなたのテーブルへ。',
+		title: '焼肉兄者では優良賞のついた神戸牛を1頭買いすることで、厳選し・好みのあった神戸牛をお客様の元へ商品を届けることが出来ます。',
 		img: '/top/strong-point/1.png',
 		className: '--first'
 	},
 	{
 		number: '02',
 		subtitle: '/top/strong-point/subtitle2.png',
-		title: '焼肉兄者だけの特権、他では手に入らない厳選された神戸牛のタン、カルビ、ハラミ。私たちの独自のルートで仕入れた極上の味を、あなたのテーブルへ。',
+		title: '肉が上手いだけじゃない！専属ソムリエが選ぶオリジナルのペアリングドリンク。神戸牛焼肉と共にオリジナルドリンクとの完璧な味のハーモニーをお楽しみいただけるオリジナルドリンクをご提案いたします。',
 		img: '/top/strong-point/2.png',
 		className: '--second'
 	},
 	{
 		number: '03',
 		subtitle: '/top/strong-point/subtitle3.png',
-		title: '焼肉兄者だけの特権、他では手に入らない厳選された神戸牛のタン、カルビ、ハラミ。私たちの独自のルートで仕入れた極上の味を、あなたのテーブルへ。',
+		title: '「和」の落ち着いた伝統的な雰囲気と、「楽」の明るい活気のある空間。二つのコンセプトから創造する唯一無二の食体験をご用意しております。お客様の好みや気分に合わせた一刻をご堪能下さい。',
 		img: '/top/strong-point/3.png',
 		className: '--third'
 	}
@@ -58,7 +58,7 @@ function StrongPoint() {
 								<p className={base+'__item__number wh c-top-strong-point-number'}>{item.number}</p>
 								<p>
 									<Image
-										className={base+'__item__title c-title-img'}
+										className={base+'__item__title'+ index + ' c-title-img'}
 										src={item.subtitle}
 										alt="兄者の強み"
 										width={200}

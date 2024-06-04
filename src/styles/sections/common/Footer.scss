@@ -1,7 +1,9 @@
 @import '../../color.scss';
 $footer-margin: 51.4rem;
 .p-footer {
-    background: $bk;
+    &.top {
+        background: $bk;
+    }
     padding-top: 0;
     &__map-area {
         margin-bottom: calc($footer-margin / -2);
