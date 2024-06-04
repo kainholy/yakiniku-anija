@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-const base = 'p-concept-mv'
+const base = 'p-news-mv'
 
 function Mv() {
   return (
@@ -15,9 +15,9 @@ function Mv() {
                     height={50}
                 />
                 <Image
-                    className={base+'__title-img c-concept-mv-title'}
-                    src='/concept/mv/title.png'
-                    alt="兄者の思い"
+                    className={base+'__title-img'}
+                    src='/news/mv/title.png'
+                    alt="お知らせ"
                     width={200}
                     height={50}
                 />

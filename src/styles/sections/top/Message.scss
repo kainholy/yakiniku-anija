@@ -42,6 +42,9 @@
     &__title-area {
         text-align: center;
     }
+    &__title {
+        height: 4.2rem;
+    }
     &__text-area {
         margin-top: 4rem;
         @include sp {

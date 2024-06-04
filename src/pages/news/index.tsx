@@ -1,11 +1,17 @@
-import React from 'react'
+import Footer from "@/components/sections/common/Footer";
+import Header from "@/components/sections/common/Header";
+import Mv from "@/components/sections/news/Mv";
 
-function Home() {
+const page = 'news'
+
+export default function Home() {
   return (
-    <div>
-      
-    </div>
-  )
+    <>
+      <Header />
+      <main>
+        <Mv />
+      </main>
+      <Footer page={ page } />
+    </>
+  );
 }
-
-export default Home

@@ -26,6 +26,14 @@ body {
 
 // concept
 @import '../styles/sections/concept/Mv.scss';
+@import '../styles/sections/concept/MessageFromCEO.scss';
+@import '../styles/sections/concept/CompanyInfo.scss';
+
+// menu
+@import '../styles/sections/menu/Mv.scss';
+
+// news
+@import '../styles/sections/news/Mv.scss';
 
 @import '../styles/sections/common/Header.scss';
 @import '../styles/sections/common/Footer.scss';

@@ -1,6 +1,6 @@
 .p-top-concept {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
+    padding-top: 9rem;
+    padding-bottom: 10rem;
     padding-left: min(5.5vw, 8rem);
     padding-right: min(5.5vw, 8rem);
     max-width: 144rem;
@@ -51,8 +51,8 @@
     }
     &__img-area {
         position: absolute;
-        width: 72.3rem;
-        height: 72.3rem;
+        width: 70.3rem;
+        height: 70.3rem;
         z-index: 1;
         @include pc {
             top: 50%;

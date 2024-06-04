@@ -144,6 +144,34 @@ $medium: 500;
         font-size: 1.3rem;
     }
 }
+
+// concept
+.c-concept-company-info-title,
+.c-concept-recruit-info-title {
+    font-family: $noto;
+    font-weight: $medium;
+    font-size: clamp(1.4rem, calc(28 / 1440 * 100vw), 1.8rem);
+    @include sp {
+        font-size: clamp(1.2rem, calc(12 / 375 * 100vw), 1.3rem);
+    }
+}
+.c-concept-company-info-text,
+.c-concept-recruit-info-text {
+    font-family: $noto;
+    font-weight: $regular;
+    font-size: clamp(1.2rem, calc(16 / 1440 * 100vw), 1.6rem);
+    line-height: 140%;
+}
+.c-concept-messageFromCEO-text {
+    font-family: $noto;
+    font-size: 1.6rem;
+    line-height: 2;
+    font-weight: $regular;
+    @include sp {
+        font-size: 1.4rem;
+    }
+}
+
 .c-title-img {
     width: auto;
     height: 3.2rem;
