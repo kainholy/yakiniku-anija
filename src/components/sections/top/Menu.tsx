@@ -35,9 +35,9 @@ const Menu: FC<MenuListProps> = ({ menulist }) => {
           </div>
 
           {menulist.map((menu) => (
-            <div>
+            <div key={menu.id}>
               {menu.menu && (
-                <ul key={menu.id} className={base + "__list"}>
+                <ul className={base + "__list"}>
                   {menu.menu.slice(0, 6).map((item, index) => (
                     <li className={base + "__item"} key={index}>
                       {item.image && (

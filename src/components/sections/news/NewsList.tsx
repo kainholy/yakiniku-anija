@@ -2,7 +2,7 @@
 import React from "react";
 import Link from "next/link";
 import { News } from "../../../../types/news";
-const base = "p-top-menu";
+const base = "p-news-news-list";
 
 type Props = {
   news: News[];
@@ -18,6 +18,13 @@ export const NewsList = (props: Props) => {
           {news.map((item) => (
             <Link href={`/news/${item.id}`} key={item.id}>
               <li className={base + "__item"}>
+                <div className={base + "__item__img-area"}>
+                  <img
+                    className={base + "__item__img"}
+                    src={item.eye_catch.url}
+                    alt={item.title}
+                  />
+                </div>
                 <p className={base + "__date c-top-news-date bk"}>
                   {new Date(item.publishedAt).toLocaleDateString()}
                 </p>

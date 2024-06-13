@@ -1,24 +1,29 @@
 import React from "react";
 import { News } from "../../../../types/news";
 
+const base = "p-news-news-description";
+
 type Props = {
   news: News;
 };
 
 const NewsDescription = ({ news }: Props) => {
   return (
-    <section id="news" className="p-top-news">
-      <div>
-        <div>
-          <h1>{news.title}</h1>
+    <section id="news" className={base}>
+      <div className={base+'__container'}>
+        <div className={base+'__title-area'}>
+          <p className={base + "__date c-top-news-date bk"}>
+            {new Date(news.publishedAt).toLocaleDateString()}
+          </p>
+          <h1 className={base+'__title c-news-description-title c-top-news-text'}>{news.title}</h1>
         </div>
 
-        <div>
-          <div>
-            <img src={news.eye_catch.url} alt="news" />
+        <div className={base+'__content'}>
+          <div className={base+'__img-area'}>
+            <img className={base+'__img'} src={news.eye_catch.url} alt="news" />
           </div>
 
-          <div>
+          <div className={base+'__description-area c-top-news-text'}>
             <div dangerouslySetInnerHTML={{ __html: `${news.content}` }}></div>
           </div>
         </div>

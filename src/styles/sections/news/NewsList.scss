@@ -1,5 +1,6 @@
-.p-top-menu {
+.p-news-news-list {
     padding-top: 8rem;
+    padding-bottom: 8rem;
     padding-left: min(5.5vw, 8rem);
     padding-right: min(5.5vw, 8rem);
     max-width: 144rem;
@@ -8,12 +9,6 @@
         padding-top: 4rem;
         padding-left: min(calc(20 / 375 * 100vw), 2rem);
         padding-right: min(calc(20 / 375 * 100vw), 2rem);
-    }
-    &__title {
-        height: 4.2rem;
-        @include sp {
-            height: 2.8rem;
-        }
     }
     &__list {
         padding-top: 5.6rem;
@@ -39,29 +34,6 @@
             width: auto;
             height: 100%;
             object-fit: cover;
-        }
-        &__name {
-            margin-top: 1.8rem;
-            white-space: pre-wrap;
-            text-align: center;
-            @include sp {
-                margin-top: 1.2rem;
-            }
-        }
-        &__price {
-            margin-top: 1.2rem;
-            text-align: center;
-            @include sp {
-                margin-top: .8rem;
-            }
-        }
-    }
-    &__button-area {
-        display: flex;
-        justify-content: right;
-        padding-top: 4rem;
-        @include sp {
-            padding-top: 3.2rem;
         }
     }
 }
