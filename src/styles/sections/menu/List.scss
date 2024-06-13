@@ -1,0 +1,102 @@
+@import '../../color.scss';
+.p-menu-list {
+    padding-top: 8rem;
+    padding-bottom: 12rem;
+    padding-left: min(5.5vw, 8rem);
+    padding-right: min(5.5vw, 8rem);
+    max-width: 144rem;
+    margin: 0 auto;
+    @include sp {
+        padding-top: 4rem;
+        padding-bottom: 8rem;
+        padding-left: min(calc(20 / 375 * 100vw), 2rem);
+        padding-right: min(calc(20 / 375 * 100vw), 2rem);
+    }
+    &__category + &__category {
+        margin-top: 6rem;
+        padding-top: 4rem;
+        border-top: 2px solid $bk;
+        @include sp {
+            margin-top: 3rem;
+            padding-top: 2rem;
+        }
+    }
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: calc(40 / 1280 * 100%);
+        row-gap: 2.4rem;
+        @include sp {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+    &__item {
+        &__title {
+            text-align: center;
+            padding-bottom: 4rem;
+        }
+        &__container {
+            width: 100%;
+            text-align: center;
+        }
+        &__img-area {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 400 / 266;
+        }
+        &__img {
+            width: auto;
+            height: 100%;
+            object-fit: cover;
+        }
+        &__name {
+            margin-top: 1.8rem;
+            white-space: pre-wrap;
+            text-align: center;
+            @include sp {
+                margin-top: 1.2rem;
+            }
+        }
+        &__price {
+            margin-top: 1.2rem;
+            text-align: center;
+            @include sp {
+                margin-top: .8rem;
+            }
+        }
+    }
+    &__button-area {
+        display: flex;
+        justify-content: right;
+        padding-top: 4rem;
+        @include sp {
+            padding-top: 3.2rem;
+        }
+    }
+    &__sub-menu {
+        &__item + &__item {
+            padding-top: 1.6rem;
+            @include sp {
+                padding-top: 1.6rem;
+            }
+        }
+        &__item {
+            display: flex;
+            justify-content: space-between;
+            width: 60rem;
+            margin: 0 auto;
+            @include sp {
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            &__price-area {
+                display: flex;
+                @include sp {
+                    padding-top: .4rem;
+                }
+            }
+        }
+    }
+}

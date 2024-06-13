@@ -4,11 +4,10 @@
         width: 100%;
         padding: 28rem calc(70 / 1280 * 100%) 8rem;
         @include sp {
-            padding: 4rem min(calc(20 / 375 * 100vw), 2rem) 0rem;
+            padding: 12rem min(calc(20 / 375 * 100vw), 2rem) 4rem;
             display: flex;
             flex-direction: column;
         }
-    
     }
     &__title-mount {
         width: 5rem;
@@ -24,8 +23,8 @@
         height: 5.65rem;
         aspect-ratio: 218.71 / 56.5;
         margin: 0 auto;
-        // @include sp {
-        //     font-size: 2.4rem;
-        // }
+        @include sp {
+            height: 4rem;
+        }
     }
 }
