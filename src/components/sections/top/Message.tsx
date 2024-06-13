@@ -53,7 +53,8 @@ function Message({ page }: { page: string}) {
                         生きたサービスでおもてなしします。<br /><br />
 
                         兄者独自のサービス空間で<br />
-                        お客様一人ひとりに、<br className='sp' />特別な瞬間を創造します。
+                        お客様一人ひとりに、<br />
+                        特別な瞬間を創造します。
                     </p>
                 </div>
                 {page === 'top' &&

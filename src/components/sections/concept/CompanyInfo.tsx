@@ -78,13 +78,6 @@ function CompanyInfo() {
                                 <p className={base + '__department'}>不動産部門</p>
                             </td>
                         </tr>
-                        <tr className={base + '__tr'}>
-                            <th className={base + '__th c-concept-company-info-title'}>警備事業内容</th>
-                            <td className={base + '__td c-concept-company-info-text'}>
-                                <p>雑踏(イベント)警備、交通誘導警備、駐車場警備</p>
-                                <p className={base + '__caption'}>※詳細は「サービス内容」ページをご覧ください。</p>
-                            </td>
-                        </tr>
                     </tbody>
                 </table>
             </div>

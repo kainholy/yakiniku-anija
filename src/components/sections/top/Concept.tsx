@@ -30,7 +30,7 @@ function Concept({ page }: { page: string }) {
             <div className={base+'__text-area'}>
                 <p className={base+'__text p-top-concept-text'}>
                     足立区で唯一、焼肉兄者が提供する絶品神戸牛を、<br />
-                    熟練の技と心からのおもてなしで。<br />
+                    熟練の技と笑顔がこぼれるおもてなしで。<br />
                     一口ごとに感じる極上の味わいで、<br />
                     最高の焼肉体験をご堪能ください。
                 </p>
