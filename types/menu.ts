@@ -13,7 +13,7 @@ export type MenuItem = {
   image?: Image;
 };
 
-export type Menu = {
+export type Menulist = {
   id: string;
   title: string;
   menu: MenuItem[];
@@ -21,7 +21,7 @@ export type Menu = {
 };
 
 export type ApiResponse = {
-  contents: Menu[];
+  contents: Menulist[];
   totalCount: number;
   offset: number;
   limit: number;
