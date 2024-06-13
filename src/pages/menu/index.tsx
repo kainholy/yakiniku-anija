@@ -1,14 +1,14 @@
 // pages/index.tsx
 import { GetStaticProps, NextPage } from "next";
 import { client } from "../../../libs/client";
-import { Menu, ApiResponse } from "../../../types/menu";
+import { Menulist, ApiResponse } from "../../../types/menu";
 import Header from "@/components/sections/common/Header";
 import Footer from "@/components/sections/common/Footer";
 import Mv from "@/components/sections/menu/Mv";
 import MenuList from "@/components/sections/menu/List";
 
 interface Props {
-  menulist: Menu[];
+  menulist: Menulist[];
 }
 
 export const getStaticProps: GetStaticProps<Props> = async () => {
