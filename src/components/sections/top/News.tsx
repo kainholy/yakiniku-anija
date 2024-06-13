@@ -9,7 +9,7 @@ function News() {
         <div className={base+'__title-area'}>
             <Image
                 className={base+'__title-mount c-title-mount'}
-                src="/title-mount.png"
+                src="/title-mount.webp"
                 alt=""
                 width={200}
                 height={50}
@@ -18,7 +18,7 @@ function News() {
             <h2>
                 <Image
                     className={base+'__title c-title-img'}
-                    src="/top/news/title.png"
+                    src="/top/news/title.webp"
                     alt="お知らせ"
                     width={200}
                     height={50}

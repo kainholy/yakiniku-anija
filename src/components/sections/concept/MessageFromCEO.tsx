@@ -10,7 +10,7 @@ function MessageFromCEO() {
             <div className={base + '__titleArea'}>
                 <Image
                     className={base+'__title-mount c-title-mount'}
-                    src="/title-mount.png"
+                    src="/title-mount.webp"
                     alt=""
                     width={200}
                     height={50}
@@ -19,7 +19,7 @@ function MessageFromCEO() {
                 <h2>
                     <Image
                         className={base+'__title-img c-title-img'}
-                        src="/concept/message-from-CEO/title.png"
+                        src="/concept/message-from-CEO/title.webp"
                         alt="責任者メッセージ"
                         width={200}
                         height={50}
@@ -29,7 +29,7 @@ function MessageFromCEO() {
             <div className={base + '__content'}>
                 <div className={base + '__imgArea'}>
                     <Image
-                        src='/concept/message-from-CEO/1.png'
+                        src='/concept/message-from-CEO/1.webp'
                         alt='責任者'
                         className={base + '__img'}
                         width={1000}
@@ -40,7 +40,7 @@ function MessageFromCEO() {
                     <div className={base + '__textArea'}>
                         <h3 className={base + '__title'}>
                             <Image
-                                src='/concept/message-from-CEO/message.png'
+                                src='/concept/message-from-CEO/message.webp'
                                 alt='食べるなら旨い肉食べようぜ！'
                                 className={base + '__img'}
                                 width={1000}

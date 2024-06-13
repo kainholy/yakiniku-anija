@@ -37,7 +37,7 @@ function CompanyInfo() {
             <div className={base + '__titleArea'}>
                 <Image
                     className={base+'__title-mount c-title-mount'}
-                    src="/title-mount.png"
+                    src="/title-mount.webp"
                     alt=""
                     width={200}
                     height={50}
@@ -46,7 +46,7 @@ function CompanyInfo() {
                 <h2>
                     <Image
                         className={base+'__title c-title-img'}
-                        src="/concept/company-info/title.png"
+                        src="/concept/company-info/title.webp"
                         alt="会社概要"
                         width={200}
                         height={50}

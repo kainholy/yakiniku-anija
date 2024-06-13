@@ -114,7 +114,7 @@ function RecruitInfo() {
             <div className={base + '__titleArea'}>
                 <Image
                     className={base+'__title-mount c-title-mount'}
-                    src="/title-mount.png"
+                    src="/title-mount.webp"
                     alt=""
                     width={200}
                     height={50}
@@ -123,7 +123,7 @@ function RecruitInfo() {
                 <h2>
                     <Image
                         className={base+'__title c-title-img'}
-                        src="/recruit/recruit-info/title.png"
+                        src="/recruit/recruit-info/title.webp"
                         alt="募集要項"
                         width={200}
                         height={50}

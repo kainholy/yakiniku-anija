@@ -17,7 +17,7 @@ function Header() {
                 <div className={base+'__logo-area'}>
                     <Image
                         className={base+'__logo c-img'}
-                        src="/common/header/logo.png"
+                        src="/common/header/logo.webp"
                         alt=""
                         width={200}
                         height={50}
@@ -58,7 +58,7 @@ function Header() {
                         <span className={base+'__detail__map'}>
                             <Image
                                 className={base+'__map c-img'}
-                                src="/common/header/map.png"
+                                src="/common/header/map.webp"
                                 alt=""
                                 width={200}
                                 height={50}
@@ -72,7 +72,7 @@ function Header() {
                         <span className={base+'__detail__instagram'}>
                             <Image
                                 className={base+'__instagram c-img'}
-                                src="/common/header/instagram.png"
+                                src="/common/header/instagram.webp"
                                 alt=""
                                 width={200}
                                 height={50}
@@ -112,7 +112,7 @@ function Header() {
                                 <span className={base+'__detail__map'}>
                                     <Image
                                         className={base+'__map c-img'}
-                                        src="/common/header/map.png"
+                                        src="/common/header/map.webp"
                                         alt=""
                                         width={200}
                                         height={50}
@@ -126,7 +126,7 @@ function Header() {
                                 <span className={base+'__detail__instagram'}>
                                     <Image
                                         className={base+'__instagram c-img'}
-                                        src="/common/header/instagram.png"
+                                        src="/common/header/instagram.webp"
                                         alt=""
                                         width={200}
                                         height={50}

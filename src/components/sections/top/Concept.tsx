@@ -11,7 +11,7 @@ function Concept({ page }: { page: string }) {
             <div className={base+'__title-area'}>
                 <Image
                     className={base+'__title-mount c-title-mount'}
-                    src="/title-mount.png"
+                    src="/title-mount.webp"
                     alt=""
                     width={200}
                     height={50}
@@ -20,7 +20,7 @@ function Concept({ page }: { page: string }) {
                 <h2>
                     <Image
                         className={base+'__title c-title-img'}
-                        src="/top/concept/title.png"
+                        src="/top/concept/title.webp"
                         alt="最高の神戸牛を一番美味しい食べ方で"
                         width={200}
                         height={50}
@@ -46,7 +46,7 @@ function Concept({ page }: { page: string }) {
         <div className={base+'__img-area'}>
             <Image
                 className={base+'__img c-img'}
-                src="/top/concept/1.png"
+                src="/top/concept/1.webp"
                 alt=""
                 width={600}
                 height={600}

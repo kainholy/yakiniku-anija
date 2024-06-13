@@ -10,7 +10,7 @@ function Message({ page }: { page: string}) {
             <div className={base+'__left-img-area'}>
                 <Image
                     className={base+'__left-img c-img'}
-                    src="/top/message/1.png"
+                    src="/top/message/1.webp"
                     alt=""
                     width={400}
                     height={400}
@@ -19,7 +19,7 @@ function Message({ page }: { page: string}) {
             <div className={base+'__right-img-area'}>
                 <Image
                     className={base+'__right-img c-img'}
-                    src="/top/message/2.png"
+                    src="/top/message/2.webp"
                     alt=""
                     width={400}
                     height={400}
@@ -29,7 +29,7 @@ function Message({ page }: { page: string}) {
                 <div className={base+'__title-area'}>
                     <Image
                         className={base+'__title-mount c-title-mount --center'}
-                        src="/title-mount.png"
+                        src="/title-mount.webp"
                         alt=""
                         width={200}
                         height={50}
@@ -38,7 +38,7 @@ function Message({ page }: { page: string}) {
                     <h2>
                         <Image
                             className={base+'__title c-title-img --center'}
-                            src="/top/message/title.png"
+                            src="/top/message/title.webp"
                             alt="極上の味でおもてなし"
                             width={200}
                             height={50}

@@ -39,7 +39,7 @@ function Footer({ page }: { page: string }) {
               <div className={base+'__logo-area'}>
                 <Image
                     className={base+'__logo c-img'}
-                    src="/common/footer/logo.png"
+                    src="/common/footer/logo.webp"
                     alt=""
                     width={200}
                     height={50}
@@ -64,7 +64,7 @@ function Footer({ page }: { page: string }) {
               <div className={base+'__sub-logo-area'}>
                 <Image
                   className={base+'__sub-logo c-img'}
-                  src="/common/footer/sub-logo.png"
+                  src="/common/footer/sub-logo.webp"
                   alt=""
                   width={200}
                   height={50}

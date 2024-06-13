@@ -10,7 +10,7 @@ function Recruit() {
             <div className={base+'__img-area --first'}>
                 <Image
                     className={base+'__img c-img'}
-                    src="/top/recruit/1.png"
+                    src="/top/recruit/1.webp"
                     alt=""
                     width={300}
                     height={200}
@@ -19,7 +19,7 @@ function Recruit() {
             <div className={base+'__img-area --second'}>
                 <Image
                     className={base+'__img c-img'}
-                    src="/top/recruit/2.png"
+                    src="/top/recruit/2.webp"
                     alt=""
                     width={300}
                     height={200}
@@ -28,7 +28,7 @@ function Recruit() {
             <div className={base+'__img-area --third'}>
                 <Image
                     className={base+'__img c-img'}
-                    src="/top/recruit/3.png"
+                    src="/top/recruit/3.webp"
                     alt=""
                     width={300}
                     height={200}
@@ -37,7 +37,7 @@ function Recruit() {
             <div className={base+'__img-area --fourth'}>
                 <Image
                     className={base+'__img c-img'}
-                    src="/top/recruit/4.png"
+                    src="/top/recruit/4.webp"
                     alt=""
                     width={300}
                     height={200}
@@ -46,7 +46,7 @@ function Recruit() {
             <div className={base+'__img-area --fifth'}>
                 <Image
                     className={base+'__img c-img'}
-                    src="/top/recruit/5.png"
+                    src="/top/recruit/5.webp"
                     alt=""
                     width={300}
                     height={200}
@@ -59,7 +59,7 @@ function Recruit() {
                 <div className={base+'__title-area'}>
                     <Image
                         className={base+'__title-mount c-title-mount --center'}
-                        src="/title-mount.png"
+                        src="/title-mount.webp"
                         alt=""
                         width={200}
                         height={50}
@@ -68,7 +68,7 @@ function Recruit() {
                     <h2>
                         <Image
                             className={base+'__title c-recruit-title-img --center'}
-                            src="/top/recruit/title.png"
+                            src="/top/recruit/title.webp"
                             alt="働く仲間募集中"
                             width={200}
                             height={50}

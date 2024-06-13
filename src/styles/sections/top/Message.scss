@@ -43,7 +43,9 @@
         text-align: center;
     }
     &__title {
+        width: auto;
         height: 4.2rem;
+        aspect-ratio: 521 / 50.16;
         @include sp {
             height: 3rem;
         }
