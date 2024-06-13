@@ -58,7 +58,7 @@ function Message({ page }: { page: string}) {
                 </div>
                 {page === 'top' &&
                     <div className={base+'__button-area'}>
-                        <Link href='/' className={base+'__button c-button wh'}>
+                        <Link href='/concept' className={base+'__button c-button wh'}>
                             兄者の思い
                         </Link>
                     </div>

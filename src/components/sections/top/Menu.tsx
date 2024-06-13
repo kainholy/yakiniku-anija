@@ -82,7 +82,7 @@ function Menu() {
                 </ul>
                 
                 <div className={base+'__button-area'}>
-                    <Link href='/' className={base+'__button c-button wh'}>
+                    <Link href='/menu' className={base+'__button c-button wh'}>
                         メニューを見る
                     </Link>
                 </div>

@@ -86,7 +86,7 @@ function Recruit() {
                     </p>
                 </div>
                 <div className={base+'__button-area'}>
-                    <Link href='/' className={base+'__button c-button bk --wh'}>
+                    <Link href='/recruit' className={base+'__button c-button bk --wh'}>
                         採用情報
                     </Link>
                 </div>

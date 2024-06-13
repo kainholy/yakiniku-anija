@@ -37,7 +37,7 @@ function Concept({ page }: { page: string }) {
             </div>
             {page === 'top' &&
                 <div className={base+'__button-area'}>
-                    <Link href='/' className={base+'__button c-button wh'}>
+                    <Link href='/concept' className={base+'__button c-button wh'}>
                         詳しく見る
                     </Link>
                 </div>
