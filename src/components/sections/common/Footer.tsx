@@ -89,7 +89,7 @@ function Footer({ page }: { page: string }) {
               <Link href="/menu" className={base+'__link c-footer-link wh'}>お品書き</Link>
             </li>
             <li className={base+'__item'}>
-                <Link href="/news" className={base+'__link c-header-link wh'}>お知らせ</Link>
+                <Link href="/news" className={base+'__link c-footer-link wh'}>お知らせ</Link>
             </li>
             <li className={base+'__item'}>
               <Link href="/recruit" className={base+'__link c-footer-link wh'}>採用情報</Link>

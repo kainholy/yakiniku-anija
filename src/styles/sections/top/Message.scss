@@ -44,6 +44,9 @@
     }
     &__title {
         height: 4.2rem;
+        @include sp {
+            height: 3rem;
+        }
     }
     &__text-area {
         margin-top: 4rem;

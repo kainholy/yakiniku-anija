@@ -49,11 +49,11 @@ function Message({ page }: { page: string}) {
                     <p className={base+'__text p-top-message-text'}>
                         ”足立区の焼肉”として全国に広めていきたい。<br />
                         私たちはこの精神を、<br />
-                        料理のクオリティと、
+                        料理のクオリティと、<br className='sp' />
                         生きたサービスでおもてなしします。<br /><br />
 
                         兄者独自のサービス空間で<br />
-                        お客様一人ひとりに、特別な瞬間を創造します。
+                        お客様一人ひとりに、<br className='sp' />特別な瞬間を創造します。
                     </p>
                 </div>
                 {page === 'top' &&

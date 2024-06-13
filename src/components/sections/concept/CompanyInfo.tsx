@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 
-const data = [
+const dataList = [
     {
         title: '会社名',
         text: '株式会社アール・ウェイブ',
@@ -55,35 +55,37 @@ function CompanyInfo() {
             </div>
             <div className={base + '__content'}>
                 <table className={base + '__table'}>
-                    {
-                        data.map((item, index) => (
-                            <tr key={index} className={base + '__tr'}>
-                                <th className={base + '__th c-concept-company-info-title'}>{item.title}</th>
-                                <td className={base + '__td c-concept-company-info-text'}>{item.text}</td>
-                            </tr>
-                        ))
-                    }
-                    <tr className={base + '__tr'}>
-                        <th className={base + '__th c-concept-company-info-title'}>グループ事業</th>
-                        <td className={base + '__td c-concept-company-info-text'}>
-                            <p className={base + '__name'}>株式会社アール・ウェイブ</p>
-                            <p className={base + '__department'}>洗車・コーティング部門</p>
-                            <p className={base + '__department'}>モーターサイクル部門</p>
-                            <p className={base + '__department'}>警備部門</p>
-                            <p className={base + '__department'}>飲食店部門</p>
-                            <p className={base + '__name'}>ウィンズ株式会社</p>
-                            <p className={base + '__department'}>車両部門</p>
-                            <p className={base + '__name'}>株式会社アース</p>
-                            <p className={base + '__department'}>不動産部門</p>
-                        </td>
-                    </tr>
-                    <tr className={base + '__tr'}>
-                        <th className={base + '__th c-concept-company-info-title'}>警備事業内容</th>
-                        <td className={base + '__td c-concept-company-info-text'}>
-                            <p>雑踏(イベント)警備、交通誘導警備、駐車場警備</p>
-                            <p className={base + '__caption'}>※詳細は「サービス内容」ページをご覧ください。</p>
-                        </td>
-                    </tr>
+                    <tbody className={base+'__tbody'}>
+                        {
+                            dataList.map((item, index) => (
+                                <tr key={index} className={base + '__tr'}>
+                                    <th className={base + '__th c-concept-company-info-title'}>{item.title}</th>
+                                    <td className={base + '__td c-concept-company-info-text'}>{item.text}</td>
+                                </tr>
+                            ))
+                        }
+                        <tr className={base + '__tr'}>
+                            <th className={base + '__th c-concept-company-info-title'}>グループ事業</th>
+                            <td className={base + '__td c-concept-company-info-text'}>
+                                <p className={base + '__name'}>株式会社アール・ウェイブ</p>
+                                <p className={base + '__department'}>洗車・コーティング部門</p>
+                                <p className={base + '__department'}>モーターサイクル部門</p>
+                                <p className={base + '__department'}>警備部門</p>
+                                <p className={base + '__department'}>飲食店部門</p>
+                                <p className={base + '__name'}>ウィンズ株式会社</p>
+                                <p className={base + '__department'}>車両部門</p>
+                                <p className={base + '__name'}>株式会社アース</p>
+                                <p className={base + '__department'}>不動産部門</p>
+                            </td>
+                        </tr>
+                        <tr className={base + '__tr'}>
+                            <th className={base + '__th c-concept-company-info-title'}>警備事業内容</th>
+                            <td className={base + '__td c-concept-company-info-text'}>
+                                <p>雑踏(イベント)警備、交通誘導警備、駐車場警備</p>
+                                <p className={base + '__caption'}>※詳細は「サービス内容」ページをご覧ください。</p>
+                            </td>
+                        </tr>
+                    </tbody>
                 </table>
             </div>
         </div>

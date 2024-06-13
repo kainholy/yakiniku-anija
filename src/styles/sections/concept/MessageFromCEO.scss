@@ -16,9 +16,9 @@
         width: auto;
         height: 4.2rem;
         aspect-ratio: 455.61 / 56.5;
-        // @include sp {
-        //     font-size: 2.4rem;
-        // }
+        @include sp {
+            height: 3rem;
+        }
         
     }
     &__content {
@@ -39,6 +39,8 @@
         width: calc(510 / 1280 * 100%);
         @include sp {
             width: 100%;
+            max-width: 45rem;
+            margin: 0 auto;
         }
     }
     &__img {
@@ -66,6 +68,9 @@
         width: auto;
         height: 10.4rem;
         aspect-ratio: 346.09 / 90.5;
+        @include sp {
+            height: 6.4rem;
+        }
     }
     &__text {
         margin-top: 2.4rem;

@@ -18,6 +18,9 @@
     }
     &__title {
         height: 4.2rem;
+        @include sp {
+            height: 3rem;
+        }
     }
     &__content {
         width: 100%;
