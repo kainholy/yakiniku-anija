@@ -97,6 +97,15 @@
                 width: 1rem;
             }
         }
+        &__instagram__link,
+        &__map__link {
+            display: inline-flex;
+            align-items: center;
+            gap: .8rem;
+            @include sp {
+                gap: .4rem;
+            }
+        }
         &__instagram {
             width: 1.46rem;
             @include sp {

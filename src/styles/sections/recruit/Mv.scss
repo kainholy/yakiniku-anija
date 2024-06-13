@@ -4,7 +4,7 @@
         width: 100%;
         padding: 28rem calc(70 / 1280 * 100%) 8rem;
         @include sp {
-            padding: 4rem min(calc(20 / 375 * 100vw), 2rem) 0rem;
+            padding: 12rem min(calc(20 / 375 * 100vw), 2rem) 4rem;
             display: flex;
             flex-direction: column;
         }

@@ -133,7 +133,7 @@ function RecruitInfo() {
             <div className={base +'__content'}>
                 <p className={base+'__name c-recruit-recruit-info-name'}>ホールスタッフ</p>
                 <p className={base+'__description c-recruit-recruit-info-description'}>
-                    お客様とのコミュニケーションや気遣いが好きな方<br />
+                    お客様とのコミュニケーションや気遣いが好きな方
                     接客サービスはお客様の笑顔が最大のやりがいです。<br />
                     焼肉兄者を笑顔であふれる店舗にしていきましょう。
                 </p>
@@ -171,6 +171,11 @@ function RecruitInfo() {
             </div>
             <div className={base +'__content'}>
                 <p className={base+'__name c-recruit-recruit-info-name'}>キッチンスタッフ</p>
+                <p className={base+'__description c-recruit-recruit-info-description'}>
+                    日々に神戸牛と向き合い、お客様の好みに合わせたカットや
+                    美味しい商品開発をする楽しさをしてみたい方は
+                    焼肉兄者で尽力してみてください。
+                </p>
                 <table className={base +'__table'}>
                     <tbody className={base+'__tbody'}>
                         {

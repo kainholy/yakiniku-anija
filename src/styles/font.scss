@@ -173,12 +173,39 @@ $medium: 500;
         font-size: 1.4rem;
     }
 }
+.c-recruit-message-title {
+    font-family: $noto;
+    font-weight: $medium;
+    font-size: 2.4rem;
+    @include sp {
+        font-size: 2rem;
+    }
+}
+.c-recruit-message-text {
+    font-family: $noto;
+    font-size: 1.6rem;
+    line-height: 2;
+    font-weight: $regular;
+    @include sp {
+        font-size: 1.4rem;
+    }
+}
 .c-recruit-recruit-info-name {
     font-family: $noto;
     font-weight: $medium;
     font-size: clamp(2rem, calc(24 / 1440 * 100vw), 2.4rem);
     @include sp {
-        font-size: clamp(1.2rem, calc(12 / 375 * 100vw), 1.3rem);
+        font-size: clamp(1.6rem, calc(18 / 375 * 100vw), 1.8rem);
+    }
+}
+.c-recruit-recruit-info-description {
+    font-family: $noto;
+    font-size: 1.5rem;
+    line-height: 2;
+    letter-spacing: 0.032rem;
+    font-weight: $regular;
+    @include sp {
+        font-size: 1.2rem;
     }
 }
 

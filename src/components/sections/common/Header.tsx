@@ -54,28 +54,32 @@ function Header() {
                     <p className={base+'__detail__text c-header-detail-text bk'}>12時~15時, 17時~23時 火曜日定休</p>
                 </li>
                 <li className={base+'__detail__item'}>
-                    <span className={base+'__detail__map'}>
-                        <Image
-                            className={base+'__map c-img'}
-                            src="/common/header/map.png"
-                            alt=""
-                            width={200}
-                            height={50}
-                        />
-                    </span>
-                    <p className={base+'__detail__text c-header-detail-text bk'}>東京都足立区綾瀬2丁目24-11 ホワイトハウス2F</p>
+                    <Link href="https://www.google.com/maps?ll=35.761206,139.82669&z=13&t=m&hl=ja&gl=JP&mapclient=embed&cid=13721843411329241504" target='_blank' className={base+'__detail__map__link'}>
+                        <span className={base+'__detail__map'}>
+                            <Image
+                                className={base+'__map c-img'}
+                                src="/common/header/map.png"
+                                alt=""
+                                width={200}
+                                height={50}
+                            />
+                        </span>
+                        <p className={base+'__detail__text c-header-detail-text bk'}>東京都足立区綾瀬2丁目24-11 ホワイトハウス2F</p>
+                    </Link>
                 </li>
                 <li className={base+'__detail__item'}>
-                    <span className={base+'__detail__instagram'}>
-                        <Image
-                            className={base+'__instagram c-img'}
-                            src="/common/header/instagram.png"
-                            alt=""
-                            width={200}
-                            height={50}
-                        />
-                    </span>
-                    <p className={base+'__detail__text c-header-detail-text bk'}>最新情報はこちらから</p>
+                    <Link href="https://www.instagram.com/yakiniku_anija315/" target='_blank' className={base+'__detail__instagram__link'}>
+                        <span className={base+'__detail__instagram'}>
+                            <Image
+                                className={base+'__instagram c-img'}
+                                src="/common/header/instagram.png"
+                                alt=""
+                                width={200}
+                                height={50}
+                            />
+                        </span>
+                        <p className={base+'__detail__text c-header-detail-text bk'}>最新情報はこちらから</p>
+                    </Link>
                 </li>
             </ul>
         </div>
@@ -104,28 +108,32 @@ function Header() {
                             <p className={base+'__detail__text c-header-detail-text bk'}>12時~15時, 17時~23時 火曜日定休</p>
                         </li>
                         <li className={base+'__detail__item'}>
-                            <span className={base+'__detail__map'}>
-                                <Image
-                                    className={base+'__map c-img'}
-                                    src="/common/header/map.png"
-                                    alt=""
-                                    width={200}
-                                    height={50}
-                                />
-                            </span>
-                            <p className={base+'__ham__detail__text c-header-detail-text bk'}>東京都足立区綾瀬2丁目24-11 ホワイトハウス2F</p>
+                            <Link href="https://www.google.com/maps?ll=35.761206,139.82669&z=13&t=m&hl=ja&gl=JP&mapclient=embed&cid=13721843411329241504" target='_blank' className={base+'__detail__map__link'}>
+                                <span className={base+'__detail__map'}>
+                                    <Image
+                                        className={base+'__map c-img'}
+                                        src="/common/header/map.png"
+                                        alt=""
+                                        width={200}
+                                        height={50}
+                                    />
+                                </span>
+                                <p className={base+'__ham__detail__text c-header-detail-text bk'}>東京都足立区綾瀬2丁目24-11 ホワイトハウス2F</p>
+                            </Link>
                         </li>
                         <li className={base+'__detail__item'}>
-                            <span className={base+'__detail__instagram'}>
-                                <Image
-                                    className={base+'__instagram c-img'}
-                                    src="/common/header/instagram.png"
-                                    alt=""
-                                    width={200}
-                                    height={50}
-                                />
-                            </span>
-                            <p className={base+'__ham__detail__text c-header-detail-text bk'}>最新情報はこちらから</p>
+                            <Link href="https://www.instagram.com/yakiniku_anija315/" target='_blank' className={base+'__detail__instagram__link'}>
+                                <span className={base+'__detail__instagram'}>
+                                    <Image
+                                        className={base+'__instagram c-img'}
+                                        src="/common/header/instagram.png"
+                                        alt=""
+                                        width={200}
+                                        height={50}
+                                    />
+                                </span>
+                                <p className={base+'__ham__detail__text c-header-detail-text bk'}>最新情報はこちらから</p>
+                            </Link>
                         </li>
                     </ul>
                 </div>
