@@ -1,3 +1,4 @@
+import FixedButton from "@/components/sections/common/FixedButton";
 import Footer from "@/components/sections/common/Footer";
 import Header from "@/components/sections/common/Header";
 import Concept from "@/components/sections/top/Concept";
@@ -34,6 +35,7 @@ export default function Home() {
       </Head>
       <Header />
       <main>
+        <FixedButton />
         <Mv />
         <News />
         <Message page={page} />

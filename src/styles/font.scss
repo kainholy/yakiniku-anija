@@ -6,6 +6,15 @@ $regular: 400;
 $medium: 500;
 
 // common
+.c-fixed-button-text {
+    font-family: $noto;
+    font-size: 1.6rem;
+    font-weight: $bold;
+    @include sp {
+        font-size: 1.4rem;
+    }
+
+}
 .c-header-link {
     font-family: $noto;
     font-size: 1.6rem;
