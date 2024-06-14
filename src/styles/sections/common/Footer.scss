@@ -3,6 +3,11 @@ $footer-margin: 51.4rem;
 .p-footer {
     &.top {
         background: $bk;
+        .p-footer__container {
+            @include sp {
+                padding-bottom: 5.4rem;
+            }
+        }
     }
     padding-top: 0;
     &__map-area {

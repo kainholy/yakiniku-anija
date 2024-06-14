@@ -72,7 +72,7 @@ function Footer({ page }: { page: string }) {
               </div>
               <div className={base+'__parent-company'}>
                 <p className={base+'__parent-company-title c-footer-parent-company-title wh'}>Parent Company</p>
-                <p className={base+'__parent-company__name c-footer-parent-company-name wh'}>アール・ウェイブ株式会社</p>
+                <p className={base+'__parent-company__name c-footer-parent-company-name wh'}>株式会社アール・ウェイブ</p>
               </div>
             </div>
           </div>
