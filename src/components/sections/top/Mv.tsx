@@ -52,7 +52,7 @@ function Mv() {
 
       <div className='p-top-mv__titleArea'>
         <Image
-            src={"/top/mv/logo.webp"}
+            src={"/top/mv/logo2.webp"}
             width={1920}
             height={1038}
             alt="兄者"

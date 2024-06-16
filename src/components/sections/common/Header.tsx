@@ -108,6 +108,11 @@ function Header() {
                             <p className={base+'__detail__text c-header-detail-text bk'}>12時~15時, 17時~23時 火曜日定休</p>
                         </li>
                         <li className={base+'__detail__item'}>
+                            <Link href="https://lin.ee/67Bt7wk" target='_blank' className={base+'__detail__instagram__link'}>
+                                <p className={base+'__ham__detail__text c-header-detail-text bk'}>↗️ LINE追加はこちらから</p>
+                            </Link>
+                        </li>
+                        <li className={base+'__detail__item'}>
                             <Link href="https://www.google.com/maps?ll=35.761206,139.82669&z=13&t=m&hl=ja&gl=JP&mapclient=embed&cid=13721843411329241504" target='_blank' className={base+'__detail__map__link'}>
                                 <span className={base+'__detail__map'}>
                                     <Image
