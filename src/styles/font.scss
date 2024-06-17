@@ -286,6 +286,12 @@ $medium: 500;
     padding: 1.6rem 6.2rem;
     display: block;
     width: fit-content;
+    transition: all .2s ease-out;
+    @include pc {
+        &:hover {
+            opacity: .8;
+        }
+    }
     @include sp {
         font-size: 1.4rem;
         padding: 1.3rem 4.4rem;

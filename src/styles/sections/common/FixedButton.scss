@@ -1,3 +1,4 @@
+@import '../../color.scss';
 .p-common-fixed-button {
     position: fixed;
     bottom: 2rem;
@@ -13,6 +14,22 @@
         align-items: center;
         gap: 2rem;
         padding: 1.9rem 5.6rem;
+        background: $bk;
+        transition: all .2s ease-out;
+        span, path {
+            color: $wh;
+            fill: $wh;
+            transition: all .2s ease-out;
+        }
+        @include pc {
+            &:hover {
+                background: $wh;
+                span, path {
+                    color: $bk;
+                    fill: $bk;
+                }
+            }
+        }
         @include sp {
             gap: 1.6rem;
             padding: 1rem 3.6rem;

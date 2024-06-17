@@ -25,13 +25,15 @@
             gap: 2.4rem;
         }
     }
-    &__list {
-        border-top: .08rem solid #fff;
-        border-bottom: .08rem solid #fff;
+    &__content-area {
         width: calc(880 / 1140 * 100%);
         @include sp {
             width: 100%;
         }
+    }
+    &__list {
+        border-top: .08rem solid #fff;
+        border-bottom: .08rem solid #fff;
     }
     &__link {
         display: block;
@@ -48,5 +50,14 @@
     }
     &__item + &__item {
         border-top: .08rem solid #fff;
+    }
+    &__button-area {
+        margin-top: 4rem;
+        @include sp {
+            margin-top: 3.2rem;
+        }
+    }
+    &__button {
+        margin: 0 0 0 auto;
     }
 }

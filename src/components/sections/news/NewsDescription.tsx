@@ -1,5 +1,6 @@
 import React from "react";
 import { News } from "../../../../types/news";
+import Link from "next/link";
 
 const base = "p-news-news-description";
 
@@ -26,6 +27,11 @@ const NewsDescription = ({ news }: Props) => {
           <div className={base+'__description-area c-top-news-text'}>
             <div dangerouslySetInnerHTML={{ __html: `${news.content}` }}></div>
           </div>
+        </div>
+        <div className={base+'__button-area'}>
+            <Link href='/news' className={base+'__button c-button wh'}>
+                一覧に戻る
+            </Link>
         </div>
       </div>
     </section>

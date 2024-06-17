@@ -31,18 +31,25 @@ function News({ news }: NewsProps) {
             />
           </h2>
         </div>
-        <ul className={base + "__list"}>
-          {news.slice(0, 3).map((item, index) => (
-            <li key={index} className={base + "__item"}>
-              <Link className={base+'__link'} href={`/news/${item.id}`}>
-                <p className={base + "__date c-top-news-date gr"}>
-                  {new Date(item.publishedAt).toLocaleDateString()}
-                </p>
-                <p className={base + "__text c-top-news-text wh"}>{item.title}</p>
-              </Link>
-            </li>
-          ))}
-        </ul>
+        <div className={base+'__content-area'}>
+          <ul className={base + "__list"}>
+            {news.slice(0, 3).map((item, index) => (
+              <li key={index} className={base + "__item"}>
+                <Link className={base+'__link'} href={`/news/${item.id}`}>
+                  <p className={base + "__date c-top-news-date gr"}>
+                    {new Date(item.publishedAt).toLocaleDateString()}
+                  </p>
+                  <p className={base + "__text c-top-news-text wh"}>{item.title}</p>
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <div className={base+'__button-area'}>
+            <Link href='/news' className={base+'__button c-button bk --wh'}>
+                一覧を見る
+            </Link>
+          </div>
+        </div>
       </div>
     </section>
   );
