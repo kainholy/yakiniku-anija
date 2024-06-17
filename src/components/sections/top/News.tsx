@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 const base = "p-top-news";
 import type { News } from "../../../../types/news";
 
@@ -33,10 +34,12 @@ function News({ news }: NewsProps) {
         <ul className={base + "__list"}>
           {news.slice(0, 3).map((item, index) => (
             <li key={index} className={base + "__item"}>
-              <p className={base + "__date c-top-news-date gr"}>
-                {new Date(item.publishedAt).toLocaleDateString()}
-              </p>
-              <p className={base + "__text c-top-news-text wh"}>{item.title}</p>
+              <Link className={base+'__link'} href={`/news/${item.id}`}>
+                <p className={base + "__date c-top-news-date gr"}>
+                  {new Date(item.publishedAt).toLocaleDateString()}
+                </p>
+                <p className={base + "__text c-top-news-text wh"}>{item.title}</p>
+              </Link>
             </li>
           ))}
         </ul>

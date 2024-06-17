@@ -33,8 +33,15 @@
             width: 100%;
         }
     }
-    &__item {
+    &__link {
+        display: block;
         padding: 3.2rem 0;
+        transition: all .2s ease-out;
+        @include pc {
+            &:hover {
+                opacity: .5;
+            }
+        }
         @include sp {
             padding: 1.6rem 0;
         }
