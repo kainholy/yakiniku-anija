@@ -5,7 +5,7 @@ const base = 'p-common-fixed-button'
 function FixedButton() {
   return (
     <div className={base}>
-      <Link className={base+'__button'} href="tel:09067036735">
+      <Link className={base+'__button'} href="tel:0120029001">
         <span className={base+'__text c-fixed-button-text bk'}>予約する</span>
         <span className={base+'__icon'}>
           <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
