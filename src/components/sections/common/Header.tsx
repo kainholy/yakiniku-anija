@@ -51,7 +51,7 @@ function Header() {
         <div className={base+'__detail pc'}>
             <ul className={base+'__detail__list'}>
                 <li className={base+'__detail__item'}>
-                    <p className={base+'__detail__text c-header-detail-text bk'}>11時~15時, 17時~23時 火曜日定休</p>
+                    <p className={base+'__detail__text c-header-detail-text bk'}>11時~15時, 17時~23時 不定休</p>
                 </li>
                 <li className={base+'__detail__item'}>
                     <Link href="https://www.google.com/maps?ll=35.761206,139.82669&z=13&t=m&hl=ja&gl=JP&mapclient=embed&cid=13721843411329241504" target='_blank' className={base+'__detail__map__link'}>
@@ -105,7 +105,7 @@ function Header() {
                 <div className={base+'__ham__detail'}>
                     <ul className={base+'__ham__detail__list'}>
                         <li className={base+'__ham__detail__item'}>
-                            <p className={base+'__detail__text c-header-detail-text bk'}>12時~15時, 17時~23時 火曜日定休</p>
+                            <p className={base+'__detail__text c-header-detail-text bk'}>12時~15時, 17時~23時 不定休</p>
                         </li>
                         <li className={base+'__detail__item'}>
                             <Link href="https://lin.ee/67Bt7wk" target='_blank' className={base+'__detail__instagram__link'}>

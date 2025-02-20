@@ -18,7 +18,7 @@ const data = [
   },
   {
     title: '定休日',
-    text: '火曜日',
+    text: '不定休',
   },
   {
     title: '交通手段',
