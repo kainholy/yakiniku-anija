@@ -7,6 +7,8 @@
     padding-bottom: 2.4rem;
     top: 0;
     left: 0;
+    // background-color: #fff;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
     @include sp {
         padding-top: 1.6rem;
         padding-bottom: 1.6rem;

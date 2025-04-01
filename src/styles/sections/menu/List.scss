@@ -21,6 +21,9 @@
             padding-top: 2rem;
         }
     }
+    &__list + &__sub-menu__list {
+      margin-top: 3.2rem;
+    }
     &__list {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -64,6 +67,14 @@
                 margin-top: .8rem;
             }
         }
+        &__price-area {
+            display: flex;
+            justify-content: center;
+            gap: .8rem;
+            @include sp {
+                gap: .4rem;
+            }
+        }
     }
     &__button-area {
         display: flex;
@@ -94,7 +105,7 @@
             &__price-area {
                 display: flex;
                 @include sp {
-                    flex-direction: column;
+                    // flex-direction: column;
                     gap: .6rem;
                     padding-top: .6rem;
                 }

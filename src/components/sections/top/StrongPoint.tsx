@@ -6,21 +6,21 @@ const data = [
 	{
 		number: '01',
 		subtitle: '/top/strong-point/subtitle1.webp',
-		title: '焼肉兄者では優良賞のついた神戸牛を1頭買いすることで、厳選し・好みのあった神戸牛をお客様の元へ商品を届けることが出来ます。',
+		title: '当店では最高な空間と共に味わえる和牛、職人の工夫が最大限活かされた料理をお客様に届けていきます。カット方法、味付けからこだわったお肉たちをご堪能下さい。',
 		img: '/top/strong-point/1.webp',
 		className: '--first'
 	},
 	{
 		number: '02',
 		subtitle: '/top/strong-point/subtitle2.webp',
-		title: '肉が上手いだけじゃない！専属ソムリエが選ぶオリジナルのペアリングドリンク。神戸牛焼肉と共にオリジナルドリンクとの完璧な味のマリアージュをお楽しみいただけるオリジナルドリンクをご提案いたします。',
+		title: '肉が上手いだけじゃない！ドリンクもリーズナブルに来ていただいたお客様が満足してもらえる、そんな兄者ドリンクをお肉と一緒に楽しんでください。',
 		img: '/top/strong-point/2.webp',
 		className: '--second'
 	},
 	{
 		number: '03',
 		subtitle: '/top/strong-point/subtitle3.webp',
-		title: '「和」の落ち着いた伝統的な雰囲気と、「楽」の明るい活気のある空間。二つのコンセプトから創造する唯一無二の食体験をご用意しております。お客様の好みや気分に合わせた一刻をご堪能下さい。',
+		title: '「和」の落ち着いた伝統的な雰囲気と、「楽」の明るい活気のある空間。二つのコンセプトから創造する唯一無二の食体験をご用意しております。お客様の好みや気分に合わせた刻の一滴をご堪能下さい。',
 		img: '/top/strong-point/3.webp',
 		className: '--third'
 	}
@@ -60,7 +60,7 @@ function StrongPoint() {
 									<Image
 										className={base+'__item__title'+ index + ' c-title-img'}
 										src={item.subtitle}
-										alt="兄者の強み"
+										alt={item.subtitle}
 										width={200}
 										height={50}
 									/>
