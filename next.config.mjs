@@ -4,8 +4,6 @@ const nextConfig = {
   output: 'export',
   images: {
     unoptimized: true,
-    formats: ['image/avif'],
-    domains: ['images.microcms-assets.io'], // Add the domain serving your images
   },
 };
 
