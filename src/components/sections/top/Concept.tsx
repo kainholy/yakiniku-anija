@@ -5,7 +5,7 @@ const base = 'p-top-concept';
 
 function Concept({ page }: { page: string }) {
   return (
-    <section id="concept" className={base}>
+    <section id="concept" className={page === 'concept' ? base + ' concept' : base}>
       <div className={base + '__container'}>
         <div className={base + '__content-area'}>
           <div className={base + '__title-area'}>

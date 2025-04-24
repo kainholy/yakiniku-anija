@@ -12,6 +12,10 @@
     padding-left: min(calc(20 / 375 * 100vw), 2rem);
     padding-right: min(calc(20 / 375 * 100vw), 2rem);
   }
+  &.concept {
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+  }
   &__container {
     position: relative;
     width: 100%;

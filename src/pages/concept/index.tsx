@@ -1,17 +1,17 @@
 import Footer from '@/components/sections/common/Footer';
 import Header from '@/components/sections/common/Header';
-import Mv from '@/components/sections/concept/Mv';
 import Concept from '@/components/sections/top/Concept';
 import Message from '@/components/sections/top/Message';
 import StrongPoint from '@/components/sections/top/StrongPoint';
 import MessageFromCEO from '@/components/sections/concept/MessageFromCEO';
 import CompanyInfo from '@/components/sections/concept/CompanyInfo';
 import Head from 'next/head';
+import SubPageMv from '@/components/sections/common/SubPageMv';
 
 const page = 'concept';
 
 const headData = {
-  title: '兄者とは | 焼肉兄者',
+  title: '兄者の思い | 焼肉兄者',
   description:
     '焼肉兄者のこだわりをご紹介。最高の神戸牛とオリジナル秘伝のたれで生み出される極上の焼肉を提供し、お客様一人ひとりに特別な食体験をお届けします。サービスと美味を追求し、共に成長する焼肉兄者の魅力をご覧ください。',
   keywords:
@@ -35,7 +35,7 @@ export default function Home() {
       </Head>
       <Header />
       <main>
-        <Mv />
+        <SubPageMv pageName={page} pageTitle="兄者の思い" />
         <Message page={page} />
         <Concept page={page} />
         <StrongPoint />

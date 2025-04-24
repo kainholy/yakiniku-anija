@@ -1,7 +1,7 @@
 import Footer from '@/components/sections/common/Footer';
 import Header from '@/components/sections/common/Header';
+import SubPageMv from '@/components/sections/common/SubPageMv';
 import Message from '@/components/sections/recruit/Message';
-import Mv from '@/components/sections/recruit/Mv';
 import RecruitInfo from '@/components/sections/recruit/RecruitInfo';
 import Head from 'next/head';
 
@@ -32,7 +32,7 @@ export default function Home() {
       </Head>
       <Header />
       <main>
-        <Mv />
+        <SubPageMv pageName={page} pageTitle="採用情報" />
         <Message />
         <RecruitInfo />
       </main>

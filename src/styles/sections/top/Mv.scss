@@ -17,6 +17,7 @@
   }
   &__logo {
     width: 30.594rem;
+    height: auto;
     @include sp {
       width: 24rem;
     }

@@ -1,13 +1,17 @@
-.p-menu-mv {
+.p-subpage-mv {
   &__container {
     position: relative;
     width: 100%;
     padding: 28rem calc(70 / 1280 * 100%) 8rem;
+    display: flex;
+    justify-content: center;
     @include sp {
       padding: 12rem min(calc(20 / 375 * 100vw), 2rem) 4rem;
-      display: flex;
-      flex-direction: column;
     }
+  }
+  &__title {
+    display: inline-flex;
+    flex-direction: column;
   }
   &__title-mount {
     width: 5rem;
@@ -21,10 +25,11 @@
   &__title-img {
     width: auto;
     height: 5.65rem;
-    aspect-ratio: 218.71 / 56.5;
+    object-fit: contain;
     margin: 0 auto;
     @include sp {
       height: 4rem;
     }
   }
 }
+

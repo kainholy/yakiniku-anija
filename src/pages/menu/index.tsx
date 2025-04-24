@@ -4,9 +4,9 @@ import { client } from '../../../libs/client';
 import { Menulist, ApiResponse } from '../../../types/menu';
 import Header from '@/components/sections/common/Header';
 import Footer from '@/components/sections/common/Footer';
-import Mv from '@/components/sections/menu/Mv';
 import MenuList from '@/components/sections/menu/List';
 import Head from 'next/head';
+import SubPageMv from '@/components/sections/common/SubPageMv';
 
 interface Props {
   menulist: Menulist[];
@@ -50,7 +50,7 @@ const Home: NextPage<Props> = ({ menulist }) => {
       </Head>
       <Header />
       <main>
-        <Mv />
+        <SubPageMv pageName={page} pageTitle="お品書き" />
         <MenuList menulist={menulist} />
       </main>
       <Footer page={page} />

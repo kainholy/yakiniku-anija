@@ -1,6 +1,7 @@
 // components/sections/menu/MenuList.tsx
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image'; // Import Image from 'next/image'
 import { News } from '../../../../types/news';
 const base = 'p-news-news-list';
 
@@ -19,10 +20,12 @@ export const NewsList = (props: Props) => {
             <Link href={`/news/${item.id}`} key={item.id}>
               <li className={base + '__item'}>
                 <div className={base + '__item__img-area'}>
-                  <img
+                  <Image
                     className={base + '__item__img'}
                     src={item.eye_catch.url}
                     alt={item.title}
+                    width={2000}
+                    height={1000}
                   />
                 </div>
                 <p className={base + '__date c-top-news-date bk'}>

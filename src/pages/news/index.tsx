@@ -3,9 +3,9 @@ import { GetStaticProps, NextPage, InferGetStaticPropsType } from 'next';
 import { client } from '../../../libs/client';
 import Header from '@/components/sections/common/Header';
 import Footer from '@/components/sections/common/Footer';
-import Mv from '@/components/sections/news/Mv';
 import NewsList from '@/components/sections/news/NewsList';
 import Head from 'next/head';
+import SubPageMv from '@/components/sections/common/SubPageMv';
 
 type Props = InferGetStaticPropsType<typeof getStaticProps>;
 
@@ -44,7 +44,7 @@ const Home: NextPage<Props> = ({ news }) => {
       </Head>
       <Header />
       <main>
-        <Mv />
+        <SubPageMv pageName={page} pageTitle="お知らせ" />
         <NewsList news={news} />
       </main>
       <Footer page={page} />
