@@ -1,6 +1,7 @@
 import React from 'react';
 import { News } from '../../../../types/news';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const base = 'p-news-news-description';
 
@@ -27,10 +28,12 @@ const NewsDescription = ({ news }: Props) => {
 
         <div className={base + '__content'}>
           <div className={base + '__img-area'}>
-            <img
+            <Image
               className={base + '__img'}
               src={news.eye_catch.url}
               alt="news"
+              width={600}
+              height={600}
             />
           </div>
 

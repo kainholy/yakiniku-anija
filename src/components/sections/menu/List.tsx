@@ -1,6 +1,7 @@
 // components/sections/menu/MenuList.tsx
 import { FC } from 'react';
 import { Menulist } from '../../../../types/menu';
+import Image from 'next/image';
 const base = 'p-menu-list';
 
 interface MenuListProps {
@@ -24,10 +25,12 @@ const MenuList: FC<MenuListProps> = ({ menulist }) => {
                     <li className={base + '__item'} key={item.title}>
                       {item.image && (
                         <div className={base + '__item__img-area'}>
-                          <img
+                          <Image
                             className={base + '__item__img'}
                             src={item.image.url}
                             alt={item.title}
+                            width={2000}
+                            height={1000}
                           />
                         </div>
                       )}

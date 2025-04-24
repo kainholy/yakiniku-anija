@@ -42,10 +42,12 @@ const Menu: FC<MenuListProps> = ({ menulist }) => {
                     <li className={base + '__item'} key={index}>
                       {item.image && (
                         <div className={base + '__item__img-area'}>
-                          <img
+                          <Image
                             className={base + '__item__img'}
                             src={item.image.url}
                             alt={item.title}
+                            width={2000}
+                            height={1000}
                           />
                         </div>
                       )}
