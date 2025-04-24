@@ -6,14 +6,14 @@
 @import 'font.scss';
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 body {
-    background: url('/bg.webp');
-    background-size: cover;
-    background-position: center;
-    background-repeat: repeat-y;
-    font-feature-settings: "palt";
+  background: url('/bg.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat-y;
+  font-feature-settings: 'palt';
 }
 // top
 @import '../styles/sections/top/Mv.scss';

@@ -1,7 +1,7 @@
-import "@/styles/globals.scss";
-import "@/styles/normalize.scss";
-import type { AppProps } from "next/app";
-import Head from "next/head";
+import '@/styles/globals.scss';
+import '@/styles/normalize.scss';
+import type { AppProps } from 'next/app';
+import Head from 'next/head';
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -24,8 +24,8 @@ export default function App({ Component, pageProps }: AppProps) {
         />
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-        <meta property="og:image" content="/ogp.png"/>
-        <meta property="og:image:secure_url" content="/ogp.png"/>
+        <meta property="og:image" content="/ogp.png" />
+        <meta property="og:image:secure_url" content="/ogp.png" />
       </Head>
       <Component {...pageProps} />
     </>
