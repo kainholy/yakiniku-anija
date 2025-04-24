@@ -5,7 +5,6 @@ import { News } from '../../../types/news';
 import Header from '@/components/sections/common/Header';
 import Footer from '@/components/sections/common/Footer';
 import NewsDescription from '@/components/sections/news/NewsDescription';
-import Mv from '@/components/sections/news/Mv';
 
 type Props = InferGetStaticPropsType<typeof getStaticProps>;
 
@@ -37,7 +36,6 @@ export default function NewsPage({ news }: Props) {
     <>
       <Header />
       <main>
-        <Mv />
         <NewsDescription news={news} />
       </main>
       <Footer page={page} />
