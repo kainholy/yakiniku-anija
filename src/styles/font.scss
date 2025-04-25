@@ -7,301 +7,297 @@ $medium: 500;
 
 // common
 .c-fixed-button-text {
-    font-family: $noto;
-    font-size: 1.6rem;
-    font-weight: $bold;
-    @include sp {
-        font-size: 1.4rem;
-    }
-
+  font-family: $noto;
+  font-size: 1.6rem;
+  font-weight: $bold;
+  @include sp {
+    font-size: 1.4rem;
+  }
 }
 .c-header-link {
-    font-family: $noto;
-    font-size: 1.6rem;
-    font-weight: $medium;
-    @include sp {
-        font-size: 1.5rem;
-    }
+  font-family: $noto;
+  font-size: 1.6rem;
+  font-weight: $medium;
+  @include sp {
+    font-size: 1.5rem;
+  }
 }
 .c-header-detail-text {
-    font-family: $noto;
+  font-family: $noto;
+  font-size: 1.3rem;
+  font-weight: $regular;
+  @include sp {
     font-size: 1.3rem;
-    font-weight: $regular;
-    @include sp {
-        font-size: 1.3rem;
-    }
+  }
 }
 .c-footer-detail-text {
-    font-family: $noto;
-    font-size: 1rem;
-    font-weight: $regular;
+  font-family: $noto;
+  font-size: 1rem;
+  font-weight: $regular;
 }
 .c-footer-detail-title,
 .c-footer-detail-text {
-    font-family: $noto;
-    font-size: 1.6rem;
-    font-weight: $regular;
-    @include sp {
-        font-size: 1.2rem;
-    }
-
+  font-family: $noto;
+  font-size: 1.6rem;
+  font-weight: $regular;
+  @include sp {
+    font-size: 1.2rem;
+  }
 }
-.c-footer-parent-company-title{
-    font-family: $noto;
-    font-size: 1.6rem;
-    font-weight: $regular;
-    @include sp {
-        font-size: 1.3rem;
-    }
+.c-footer-parent-company-title {
+  font-family: $noto;
+  font-size: 1.6rem;
+  font-weight: $regular;
+  @include sp {
+    font-size: 1.3rem;
+  }
 }
 .c-footer-parent-company-name {
-    font-family: $noto;
-    font-size: 1.8rem;
-    font-weight: $regular;
-    @include sp {
-        font-size: 1.4rem;
-    }
+  font-family: $noto;
+  font-size: 1.8rem;
+  font-weight: $regular;
+  @include sp {
+    font-size: 1.4rem;
+  }
 }
 .c-footer-link {
-    font-family: $noto;
-    font-size: 1.4rem;
-    font-weight: $regular;
-    @include sp {
-        font-size: 1.2rem;
-    }
+  font-family: $noto;
+  font-size: 1.4rem;
+  font-weight: $regular;
+  @include sp {
+    font-size: 1.2rem;
+  }
 }
 
 // top
 .c-top-news-date {
-    font-family: $noto;
-    font-size: 1.2rem;
-    line-height: 2;
-    font-weight: $bold;
+  font-family: $noto;
+  font-size: 1.6rem;
+  line-height: 2;
+  font-weight: $bold;
 }
 .c-top-news-text {
-    font-family: $noto;
-    font-size: 1.6rem;
-    line-height: 2;
-    font-weight: $regular;
-    @include sp {
-        font-size: 1.4rem;
-    }
+  font-family: $noto;
+  font-size: 1.6rem;
+  line-height: 2;
+  font-weight: $regular;
+  @include sp {
+    font-size: 1.4rem;
+  }
 }
 .p-top-message-text {
-    font-family: $noto;
-    font-size: 1.8rem;
-    line-height: 2;
-    letter-spacing: 0.032rem;
-    font-weight: $regular;
-    @include sp {
-        font-size: 1.6rem;
-    }
+  font-family: $noto;
+  font-size: 1.8rem;
+  line-height: 2;
+  letter-spacing: 0.032rem;
+  font-weight: $regular;
+  @include sp {
+    font-size: 1.6rem;
+  }
 }
 .p-top-concept-text {
-    font-family: $noto;
-    font-size: 1.6rem;
-    line-height: 2;
-    letter-spacing: 0.032rem;
-    font-weight: $regular;
-    @include sp {
-        font-size: 1.3rem;
-    }
+  font-family: $noto;
+  font-size: 1.6rem;
+  line-height: 2;
+  letter-spacing: 0.032rem;
+  font-weight: $regular;
+  @include sp {
+    font-size: 1.3rem;
+  }
 }
 .c-top-menu-name {
-    font-family: $noto;
-    font-size: 2rem;
-    font-weight: $bold;
-    letter-spacing: calc(20 * 0.007rem);
-    @include sp {
-        font-size: 1.6rem;
-    }
+  font-family: $noto;
+  font-size: 2rem;
+  font-weight: $bold;
+  letter-spacing: calc(20 * 0.007rem);
+  @include sp {
+    font-size: 1.6rem;
+  }
 }
 .c-top-menu-price {
-    font-family: $noto;
-    font-size: 1.8rem;
-    font-weight: $medium;
-    letter-spacing: calc(14 * 0.007rem);
-    @include sp {
-        font-size: 1.4rem;
-    }
+  font-family: $noto;
+  font-size: 1.8rem;
+  font-weight: $medium;
+  letter-spacing: calc(14 * 0.007rem);
+  @include sp {
+    font-size: 1.4rem;
+  }
 }
 .c-top-strong-point-text {
-    font-family: $noto;
-    font-size: 1.6rem;
-    line-height: 2;
-    font-weight: $regular;
-    @include sp {
-        font-size: 1.4rem;
-    }
+  font-family: $noto;
+  font-size: 1.6rem;
+  line-height: 2;
+  font-weight: $regular;
+  @include sp {
+    font-size: 1.4rem;
+  }
 }
 .c-top-strong-point-number {
-    font-family: $play;
-    font-size: 8rem;
-    font-weight: $bold;
-    letter-spacing: 80 * 0.007rem;
-    opacity: 0.2;
-    @include sp {
-        font-size: 7rem;
-    }
+  font-family: $play;
+  font-size: 8rem;
+  font-weight: $bold;
+  letter-spacing: 80 * 0.007rem;
+  opacity: 0.2;
+  @include sp {
+    font-size: 7rem;
+  }
 }
 .c-top-recruit-text {
-    font-family: $noto;
-    font-size: 1.6rem;
-    line-height: 2;
-    font-weight: $regular;
-    @include sp {
-        font-size: 1.3rem;
-    }
+  font-family: $noto;
+  font-size: 1.6rem;
+  line-height: 2;
+  font-weight: $regular;
+  @include sp {
+    font-size: 1.3rem;
+  }
 }
 
 // concept, news, recruit
 .c-menu-category-name {
-    font-family: $noto;
-    font-size: 2.8rem;
-    font-weight: $bold;
-    @include sp {
-        font-size: 2.4rem;
-    }
-
+  font-family: $noto;
+  font-size: 2.8rem;
+  font-weight: $bold;
+  @include sp {
+    font-size: 2.4rem;
+  }
 }
 .c-concept-company-info-title,
 .c-concept-recruit-info-title,
 .c-recruit-recruit-info-title {
-    font-family: $noto;
-    font-weight: $medium;
-    font-size: clamp(1.4rem, calc(18 / 1440 * 100vw), 1.8rem);
-    @include sp {
-        font-size: clamp(1.2rem, calc(12 / 375 * 100vw), 1.3rem);
-    }
+  font-family: $noto;
+  font-weight: $medium;
+  font-size: clamp(1.4rem, calc(18 / 1440 * 100vw), 1.8rem);
+  @include sp {
+    font-size: clamp(1.2rem, calc(12 / 375 * 100vw), 1.3rem);
+  }
 }
 .c-concept-company-info-text,
 .c-concept-recruit-info-text,
 .c-recruit-recruit-info-text {
-    font-family: $noto;
-    font-weight: $regular;
-    font-size: clamp(1.2rem, calc(16 / 1440 * 100vw), 1.6rem);
-    line-height: 140%;
+  font-family: $noto;
+  font-weight: $regular;
+  font-size: clamp(1.2rem, calc(16 / 1440 * 100vw), 1.6rem);
+  line-height: 140%;
 }
 .c-concept-messageFromCEO-text {
-    font-family: $noto;
-    font-size: 1.6rem;
-    line-height: 2;
-    font-weight: $regular;
-    @include sp {
-        font-size: 1.4rem;
-    }
+  font-family: $noto;
+  font-size: 1.6rem;
+  line-height: 2;
+  font-weight: $regular;
+  @include sp {
+    font-size: 1.4rem;
+  }
 }
 .c-news-description-title {
-    font-family: $noto;
-    font-weight: $regular;
-    font-size: 2.4rem;
-    @include sp {
-        font-size: 2rem;
-    }
-
+  font-family: $noto;
+  font-weight: $regular;
+  font-size: 2.4rem;
+  @include sp {
+    font-size: 2rem;
+  }
 }
 .c-recruit-message-title {
-    font-family: $noto;
-    font-weight: $medium;
-    font-size: 2.4rem;
-    @include sp {
-        font-size: 2rem;
-    }
+  font-family: $noto;
+  font-weight: $medium;
+  font-size: 2.4rem;
+  @include sp {
+    font-size: 2rem;
+  }
 }
 .c-recruit-message-text {
-    font-family: $noto;
-    font-size: 1.6rem;
-    line-height: 2;
-    font-weight: $regular;
-    @include sp {
-        font-size: 1.4rem;
-    }
+  font-family: $noto;
+  font-size: 1.6rem;
+  line-height: 2;
+  font-weight: $regular;
+  @include sp {
+    font-size: 1.4rem;
+  }
 }
 .c-recruit-recruit-info-name {
-    font-family: $noto;
-    font-weight: $medium;
-    font-size: clamp(2rem, calc(24 / 1440 * 100vw), 2.4rem);
-    @include sp {
-        font-size: clamp(1.6rem, calc(18 / 375 * 100vw), 1.8rem);
-    }
+  font-family: $noto;
+  font-weight: $medium;
+  font-size: clamp(2rem, calc(24 / 1440 * 100vw), 2.4rem);
+  @include sp {
+    font-size: clamp(1.6rem, calc(18 / 375 * 100vw), 1.8rem);
+  }
 }
 .c-recruit-recruit-info-description {
-    font-family: $noto;
-    font-size: 1.5rem;
-    line-height: 2;
-    letter-spacing: 0.032rem;
-    font-weight: $regular;
-    @include sp {
-        font-size: 1.2rem;
-    }
+  font-family: $noto;
+  font-size: 1.5rem;
+  line-height: 2;
+  letter-spacing: 0.032rem;
+  font-weight: $regular;
+  @include sp {
+    font-size: 1.2rem;
+  }
 }
 
 .c-title-img {
-    width: auto;
-    height: 3.2rem;
-    margin-top: 1.6rem;
-    @include sp {
-        margin-top: 1.2rem;
-        height: 2.4rem;
-    }
-    &.--center {
-        margin-left: auto;
-        margin-right: auto;
-    }
+  width: auto;
+  height: 3.2rem;
+  margin-top: 1.6rem;
+  @include sp {
+    margin-top: 1.2rem;
+    height: 2.4rem;
+  }
+  &.--center {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .c-recruit-title-img {
-    width: auto;
-    height: 4.7rem;
-    margin-top: 1.6rem;
-    @include sp {
-        margin-top: 1.2rem;
-        height: 3.2rem;
-    }
-    &.--center {
-        margin-left: auto;
-        margin-right: auto;
-    }
+  width: auto;
+  height: 4.7rem;
+  margin-top: 1.6rem;
+  @include sp {
+    margin-top: 1.2rem;
+    height: 3.2rem;
+  }
+  &.--center {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .c-title-mount {
-    width: 2.83rem;
-    height: 0.824rem;
-    &.--center {
-        margin: 0 auto;
-    }
+  width: 2.83rem;
+  height: 0.824rem;
+  &.--center {
+    margin: 0 auto;
+  }
 }
 .c-title-en {
-    font-family: $play;
-    font-weight: $bold;
-    font-size: 1.6rem;
-    margin-top: .8rem;
-    @include sp {
-        font-size: 1.3rem;
-    }
+  font-family: $play;
+  font-weight: $bold;
+  font-size: 1.6rem;
+  margin-top: 0.8rem;
+  @include sp {
+    font-size: 1.3rem;
+  }
 }
 .c-button {
-    background: $bk;
-    color: $wh;
-    font-family: $noto;
-    font-size: 1.6rem;
-    padding: 1.6rem 6.2rem;
-    display: block;
-    width: fit-content;
-    transition: all .2s ease-out;
-    @include pc {
-        &:hover {
-            opacity: .8;
-        }
+  background: $bk;
+  color: $wh;
+  font-family: $noto;
+  font-size: 1.6rem;
+  padding: 1.6rem 6.2rem;
+  display: block;
+  width: fit-content;
+  transition: all 0.2s ease-out;
+  @include pc {
+    &:hover {
+      opacity: 0.8;
     }
-    @include sp {
-        font-size: 1.4rem;
-        padding: 1.3rem 4.4rem;
-    }
-    &.--wh {
-        background: $wh;
-    }
+  }
+  @include sp {
+    font-size: 1.4rem;
+    padding: 1.3rem 4.4rem;
+  }
+  &.--wh {
+    background: $wh;
+  }
 }
 .c-img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }

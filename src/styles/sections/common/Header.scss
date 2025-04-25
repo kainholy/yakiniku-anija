@@ -1,163 +1,166 @@
 @import '../../color.scss';
 .p-header {
-    position: fixed;
-    z-index: 100;
-    width: 100%;
-    padding-top: 2.4rem;
-    padding-bottom: 2.4rem;
-    top: 0;
-    left: 0;
-    // background-color: #fff;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  padding-top: 2.4rem;
+  padding-bottom: 2.4rem;
+  top: 0;
+  left: 0;
+  // background-color: #fff;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0)
+  );
+  @include sp {
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
+  }
+  &__container {
+    padding-left: min(5.5vw, 8rem);
+    padding-right: min(5.5vw, 8rem);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     @include sp {
-        padding-top: 1.6rem;
-        padding-bottom: 1.6rem;
+      padding-left: min(calc(20 / 375 * 100vw), 2rem);
+      padding-right: min(calc(20 / 375 * 100vw), 2rem);
     }
-    &__container {
-        padding-left: min(5.5vw, 8rem);
-        padding-right: min(5.5vw, 8rem);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        @include sp {
-            padding-left: min(calc(20 / 375 * 100vw), 2rem);
-            padding-right: min(calc(20 / 375 * 100vw), 2rem);
-        }
+  }
+  &__main {
+    display: flex;
+    flex-direction: column;
+  }
+  &__logo-area {
+    width: 14rem;
+    aspect-ratio: 140 / 65.17;
+    @include sp {
+      z-index: 3;
+      width: 10rem;
     }
-    &__main {
-        display: flex;
-        flex-direction: column;
+  }
+  &__btn {
+    width: 5.2rem;
+    height: 4rem;
+    background: $bk;
+    padding: 1rem;
+    display: inline-flex;
+    gap: 0.8rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    &-line {
+      content: '';
+      width: 100%;
+      height: 0.15rem;
+      background: $wh;
+      display: block;
+      transition: 0.2s ease-out;
+      transform-origin: center;
     }
-    &__logo-area {
-        width: 14rem;
-        aspect-ratio: 140 / 65.17;
-        @include sp {
-            z-index: 3;
-            width: 10rem;
-        }
-    }
-    &__btn {
-        width: 5.2rem;
-        height: 4rem;
-        background: $bk;
-        padding: 1rem;
-        display: inline-flex;
-        gap: .8rem;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        z-index: 3;
-        &-line {
-            content: "";
-            width: 100%;
-            height: .15rem;
-            background: $wh;
-            display: block;
-            transition: .2s ease-out;
-            transform-origin: center;
-        }
-    }
-    &__btn[aria-expanded="true"] > .line1 {
-        transform: translate(0px, 4.5px) rotateZ(-25deg);
-    }
-    
-    &__btn[aria-expanded="true"] > .line2 {
-        transform: translate(0px, -4.5px) rotateZ(25deg);
-    }
-    &__detail {
-        padding-left: min(5.5vw, 8rem);
-        padding-top: .8rem;
-        @include sp {
-            padding-left: min(calc(20 / 375 * 100vw), 2rem);
-        }
-        &__list {
-            display: flex;
-            gap: 1.6rem;
-            @include sp {
-                gap: .8rem;
-            }
-        }
-        &__item + &__item {
-            padding-left: 1.6rem;
-            border-left: .1rem solid $bk;
-            @include sp {
-                padding-left: 0;
-                border-left: none;
-            }
-        }
-        &__item {
-            display: inline-flex;
-            align-items: center;
-            gap: .8rem;
-            @include sp {
-                gap: .4rem;
-            }
-        }
-        &__map {
-            width: 1.283rem;
-            @include sp {
-                width: 1rem;
-            }
-        }
-        &__instagram__link,
-        &__map__link {
-            display: inline-flex;
-            align-items: center;
-            gap: .8rem;
-            @include sp {
-                gap: .4rem;
-            }
-        }
-        &__instagram {
-            width: 1.46rem;
-            @include sp {
-                width: 1.2rem;
-            }
-        }
+  }
+  &__btn[aria-expanded='true'] > .line1 {
+    transform: translate(0px, 4.5px) rotateZ(-25deg);
+  }
+
+  &__btn[aria-expanded='true'] > .line2 {
+    transform: translate(0px, -4.5px) rotateZ(25deg);
+  }
+  &__detail {
+    padding-left: min(5.5vw, 8rem);
+    padding-top: 0.8rem;
+    @include sp {
+      padding-left: min(calc(20 / 375 * 100vw), 2rem);
     }
     &__list {
-        display: flex;
-        gap: 3.2rem;
-        @include sp {
-            gap: 1.2rem;
-        }
+      display: flex;
+      gap: 1.6rem;
+      @include sp {
+        gap: 0.8rem;
+      }
     }
+    &__item + &__item {
+      padding-left: 1.6rem;
+      border-left: 0.1rem solid $bk;
+      @include sp {
+        padding-left: 0;
+        border-left: none;
+      }
+    }
+    &__item {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.8rem;
+      @include sp {
+        gap: 0.4rem;
+      }
+    }
+    &__map {
+      width: 1.283rem;
+      @include sp {
+        width: 1rem;
+      }
+    }
+    &__instagram__link,
+    &__map__link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.8rem;
+      @include sp {
+        gap: 0.4rem;
+      }
+    }
+    &__instagram {
+      width: 1.46rem;
+      @include sp {
+        width: 1.2rem;
+      }
+    }
+  }
+  &__list {
+    display: flex;
+    gap: 3.2rem;
+    @include sp {
+      gap: 1.2rem;
+    }
+  }
 
-    &__ham[aria-hidden="false"] {
-        transform: translateX(0%);
+  &__ham[aria-hidden='false'] {
+    transform: translateX(0%);
+  }
+  &__ham {
+    width: 100%;
+    height: 100dvh;
+    background-color: $wh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transform: translateX(-100%);
+    transition: 0.3s ease-out;
+    &__nav {
+      width: 100%;
+      padding-top: 30dvh;
+      padding-left: min(calc(20 / 375 * 100vw), 2rem);
+      padding-right: min(calc(20 / 375 * 100vw), 2rem);
     }
-    &__ham {
-        width: 100%;
-        height: 100dvh;
-        background-color: $wh;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 1;
-        transform: translateX(-100%);
-        transition: .3s ease-out;
-        &__nav {
-            width: 100%;
-            padding-top: 30dvh;
-            padding-left: min(calc(20 / 375 * 100vw), 2rem);
-            padding-right: min(calc(20 / 375 * 100vw), 2rem);
-        }
-        &__list {
-            display: flex;
-            flex-direction: column;
-            gap: 4rem;
-            align-items: flex-start;
-        }
-        &__detail {
-            margin-top: 4rem;
-            padding-left: 2rem;
-            border-left: .1rem $bk solid;
-        }
-        &__detail__list {
-            display: flex;
-            flex-direction: column;
-            gap: 2.4rem;
-        }
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+      align-items: flex-start;
     }
-
+    &__detail {
+      margin-top: 4rem;
+      padding-left: 2rem;
+      border-left: 0.1rem $bk solid;
+    }
+    &__detail__list {
+      display: flex;
+      flex-direction: column;
+      gap: 2.4rem;
+    }
+  }
 }

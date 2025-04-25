@@ -1,69 +1,73 @@
 .p-top-concept {
-    padding-top: 9rem;
-    padding-bottom: 10rem;
-    padding-left: min(5.5vw, 8rem);
-    padding-right: min(5.5vw, 8rem);
-    max-width: 144rem;
-    margin: 0 auto;
-    overflow: hidden;
+  padding-top: 9rem;
+  padding-bottom: 10rem;
+  padding-left: min(5.5vw, 8rem);
+  padding-right: min(5.5vw, 8rem);
+  max-width: 144rem;
+  margin: 0 auto;
+  overflow: hidden;
+  @include sp {
+    padding-top: 6rem;
+    padding-bottom: 0rem;
+    padding-left: min(calc(20 / 375 * 100vw), 2rem);
+    padding-right: min(calc(20 / 375 * 100vw), 2rem);
+  }
+  &.concept {
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+  }
+  &__container {
+    position: relative;
+    width: 100%;
+    border: 0.2rem solid #000;
+    display: flex;
+    padding: 8rem calc(70 / 1280 * 100%);
     @include sp {
-        padding-top: 6rem;
-        padding-bottom: 0rem;
-        padding-left: min(calc(20 / 375 * 100vw), 2rem);
-        padding-right: min(calc(20 / 375 * 100vw), 2rem);
+      padding: 4rem min(calc(20 / 375 * 100vw), 2rem) 0rem;
+      display: flex;
+      flex-direction: column;
     }
-    &__container {
-        position: relative;
-        width: 100%;
-        border: .2rem solid #000;
-        display: flex;
-        padding: 8rem calc(70 / 1280 * 100%);
-        @include sp {
-            padding: 4rem min(calc(20 / 375 * 100vw), 2rem) 0rem;
-            display: flex;
-            flex-direction: column;
-        }
+  }
+  &__content-area {
+    position: relative;
+    z-index: 2;
+  }
+  &__title {
+    margin-top: 2.4rem;
+    height: 10.792rem;
+    aspect-ratio: 2691 / 520;
+    @include sp {
+      margin-top: 2rem;
+      height: 7rem;
     }
-    &__content-area {
-        position: relative;
-        z-index: 2;
+  }
+  &__text-area {
+    padding-top: 3.2rem;
+    @include sp {
+      padding-top: 2.4rem;
     }
-    &__title {
-        margin-top: 2.4rem;
-        height: 10.792rem;
-        aspect-ratio: 2691 / 520;
-        @include sp {
-            margin-top: 2rem;
-            height: 7rem;
-        }
+  }
+  &__button-area {
+    padding-top: 4rem;
+    @include sp {
+      padding-top: 3.2rem;
     }
-    &__text-area {
-        padding-top: 3.2rem;
-        @include sp {
-            padding-top: 2.4rem;
-        }
+  }
+  &__img-area {
+    position: absolute;
+    width: 70.3rem;
+    height: 70.3rem;
+    z-index: 1;
+    @include pc {
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%);
     }
-    &__button-area {
-        padding-top: 4rem;
-        @include sp {
-            padding-top: 3.2rem;
-        }
+    @include sp {
+      position: relative;
+      width: 40rem;
+      height: 40rem;
+      margin-top: -8rem;
     }
-    &__img-area {
-        position: absolute;
-        width: 70.3rem;
-        height: 70.3rem;
-        z-index: 1;
-        @include pc {
-            top: 50%;
-            left: 50%;
-            transform: translateY(-50%);
-        }
-        @include sp {
-            position: relative;
-            width: 40rem;
-            height: 40rem;
-            margin-top: -8rem;
-        }
-    }
+  }
 }

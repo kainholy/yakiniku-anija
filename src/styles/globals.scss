@@ -1,19 +1,16 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 @import 'mixin.scss';
 @import 'color.scss';
 @import 'font.scss';
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 body {
-    background: url('/bg.webp');
-    background-size: cover;
-    background-position: center;
-    background-repeat: repeat-y;
-    font-feature-settings: "palt";
+  background: url('/bg.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat-y;
+  font-feature-settings: 'palt';
 }
 // top
 @import '../styles/sections/top/Mv.scss';
@@ -25,24 +22,21 @@ body {
 @import '../styles/sections/top/Recruit.scss';
 
 // concept
-@import '../styles/sections/concept/Mv.scss';
 @import '../styles/sections/concept/MessageFromCEO.scss';
 @import '../styles/sections/concept/CompanyInfo.scss';
 
 // menu
-@import '../styles/sections/menu/Mv.scss';
 @import '../styles/sections/menu/List.scss';
 
 // news
-@import '../styles/sections/news/Mv.scss';
 @import '../styles/sections/news/NewsList.scss';
 @import '../styles/sections/news/NewsDescription.scss';
 
 // recruit
-@import '../styles/sections/recruit/Mv.scss';
 @import '../styles/sections/recruit/Message.scss';
 @import '../styles/sections/recruit/RecruitInfo.scss';
 
 @import '../styles/sections/common/Header.scss';
 @import '../styles/sections/common/Footer.scss';
 @import '../styles/sections/common/FixedButton.scss';
+@import '../styles/sections/common/SubPageMv.scss';
