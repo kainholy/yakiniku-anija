@@ -7,8 +7,9 @@ function FixedButton() {
     <div className={base}>
       <Link
         className={base + '__button'}
-        href="https://www.google.com/maps/reserve/v/dine/c/f3blRVoO3A4?source=pa&opi=89978449&hl=ja-JP&gei=hH_nZ472N_Dm2roPuKfxmA8&sourceurl=https%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3D%25E7%2584%25BC%25E8%2582%2589%25E5%2585%2584%25E8%2580%2585%26rlz%3D1C5CHFA_enJP980JP980%26oq%3D%25E7%2584%25BC%25E8%2582%2589%25E5%2585%2584%25E8%2580%2585%26pf%3Dcs%26sourceid%3Dchrome%26ie%3DUTF-8&ihs=1"
-        target="_blank"
+        // href="https://www.google.com/maps/reserve/v/dine/c/f3blRVoO3A4?source=pa&opi=89978449&hl=ja-JP&gei=hH_nZ472N_Dm2roPuKfxmA8&sourceurl=https%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3D%25E7%2584%25BC%25E8%2582%2589%25E5%2585%2584%25E8%2580%2585%26rlz%3D1C5CHFA_enJP980JP980%26oq%3D%25E7%2584%25BC%25E8%2582%2589%25E5%2585%2584%25E8%2580%2585%26pf%3Dcs%26sourceid%3Dchrome%26ie%3DUTF-8&ihs=1"
+        href="tel:0120-029-001"
+        // target="_blank"
       >
         <span className={base + '__text c-fixed-button-text bk'}>予約する</span>
         <span className={base + '__icon'}>
