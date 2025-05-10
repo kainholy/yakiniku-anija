@@ -39,10 +39,10 @@ const MenuList: FC<MenuListProps> = ({ menulist }) => {
                       </p>
                       <div className={base + '__item__price-area'}>
                         <p className={base + '__item__price c-top-menu-price'}>
-                          {item.price}円
+                          {item.price.toLocaleString()}円
                         </p>
                         <p className={base + '__item__price c-top-menu-price'}>
-                          （税込{Math.floor(item.price * 1.1)}円）
+                          （税込{Math.floor(item.price * 1.1).toLocaleString()}円）
                         </p>
                       </div>
                     </li>
@@ -67,14 +67,14 @@ const MenuList: FC<MenuListProps> = ({ menulist }) => {
                             base + '__sub-menu__item__price c-top-menu-price'
                           }
                         >
-                          {item.price}円
+                          {item.price.toLocaleString()}円
                         </p>
                         <p
                           className={
                             base + '__sub-menu__item__price c-top-menu-price'
                           }
                         >
-                          （税込{Math.floor(item.price * 1.1)}円）
+                          （税込{Math.floor(item.price * 1.1).toLocaleString()}円）
                         </p>
                       </div>
                     </li>

@@ -55,10 +55,10 @@ const Menu: FC<MenuListProps> = ({ menulist }) => {
                         {item.title}
                       </p>
                       <p className={base + '__item__price c-top-menu-price'}>
-                        {item.price}円
+                        {item.price.toLocaleString()}円
                       </p>
                       <p className={base + '__item__price c-top-menu-price'}>
-                        （税込{Math.round(item.price * 1.1)}円）
+                        （税込{Math.round(item.price * 1.1).toLocaleString()}円）
                       </p>
                     </li>
                   ))}
